@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TouchDesign.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>4A9C9ACA1BBB5E710098FC5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A9C9AF71BBB63AC0098FC5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

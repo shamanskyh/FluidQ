@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
                BuildableName = "TouchDesign Server.app"
                BlueprintName = "TouchDesign Server"
-               ReferencedContainer = "container:TouchDesign Server.xcodeproj">
+               ReferencedContainer = "container:TouchDesign.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
             BuildableName = "TouchDesign Server.app"
             BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign Server.xcodeproj">
+            ReferencedContainer = "container:TouchDesign.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
             BuildableName = "TouchDesign Server.app"
             BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign Server.xcodeproj">
+            ReferencedContainer = "container:TouchDesign.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
             BuildableName = "TouchDesign Server.app"
             BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign Server.xcodeproj">
+            ReferencedContainer = "container:TouchDesign.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
