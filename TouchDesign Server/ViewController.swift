@@ -8,6 +8,8 @@
 
 import Cocoa
 import MultipeerConnectivity
+import IOKit
+import IOKit.serial
 
 class ViewController: NSViewController {
 
@@ -20,9 +22,18 @@ class ViewController: NSViewController {
     
     let multipeerManager = MultipeerManager()
     
+    /// a file descriptor to write to the serial port
+    let serialFileDescriptor = open("/dev/cu.usbmodem1411", O_RDWR | O_NOCTTY | O_NONBLOCK);
+    
     /// sends a command to the HID device and displays it in the list
     /// - Parameter command: the command to send
     internal func sendCommandToBoard(command: Command) {
+        
+        // actually send the command to the serial port
+        // TODO: Handle modifier keys
+        // TODO: Higher baud rate?
+        let stringToSend = String(command.keystrokes.map({ $0.keyEquivalent }))
+        write(serialFileDescriptor, stringToSend, stringToSend.characters.count)
         
         // append onto the array
         previousCommands.append(command)

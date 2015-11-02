@@ -9,12 +9,12 @@
 let kMultipeerServiceType = "hss-tdesign"
 
 // MARK: - Levels
-let kAtKeystroke = Keystroke(identifier: "at", keyEquivalent: "A", plaintext: "at")
-let kOutKeystroke = Keystroke(identifier: "out", keyEquivalent: "O", plaintext: "Out •")
+let kAtKeystroke = Keystroke(identifier: "at", keyEquivalent: "a", plaintext: "at")
+let kOutKeystroke = Keystroke(identifier: "out", keyEquivalent: "o", plaintext: "Out •")
 let kEnterKeystroke = Keystroke(identifier: "enter", keyEquivalent: "\n", plaintext: "•")
-let kThruKeystroke = Keystroke(identifier: "thru", keyEquivalent: "T", plaintext: "Thru")
-let kFullKeystroke = Keystroke(identifier: "full", keyEquivalent: "F", plaintext: "Full")
-let kClearKeystroke = Keystroke(identifier: "clear", keyEquivalent: "b", plaintext: "")
+let kThruKeystroke = Keystroke(identifier: "thru", keyEquivalent: "t", plaintext: "Thru")
+let kFullKeystroke = Keystroke(identifier: "full", keyEquivalent: "f", plaintext: "Full")
+let kClearKeystroke = Keystroke(identifier: "clear", keyEquivalent: Character("0x08"), plaintext: "")
 
 // MARK: - Cueing
 let kRecordKeystroke = Keystroke(identifier: "record", keyEquivalent: "r", plaintext: "Record")
