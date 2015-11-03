@@ -10,6 +10,7 @@ let kMultipeerServiceType = "hss-tdesign"
 
 // MARK: - Levels
 let kAtKeystroke = Keystroke(identifier: "at", keyEquivalent: "a", plaintext: "at")
+let kAndKeystroke = Keystroke(identifier: "and", keyEquivalent: "=", plaintext: "+")
 let kOutKeystroke = Keystroke(identifier: "out", keyEquivalent: "o", plaintext: "Out •")
 let kEnterKeystroke = Keystroke(identifier: "enter", keyEquivalent: "\n", plaintext: "•")
 let kThruKeystroke = Keystroke(identifier: "thru", keyEquivalent: "t", plaintext: "Thru")
