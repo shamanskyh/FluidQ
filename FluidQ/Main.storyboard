@@ -10,7 +10,7 @@
         <!--Circles-->
         <scene sceneID="NvX-uJ-QTU">
             <objects>
-                <viewController id="Pi2-C8-A0U" customClass="CirclesViewController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pi2-C8-A0U" customClass="CirclesViewController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lYj-fm-TTc"/>
                         <viewControllerLayoutGuide type="bottom" id="luB-pQ-V0J"/>
@@ -29,7 +29,7 @@
         <!--Keypad-->
         <scene sceneID="EYg-wM-h8r">
             <objects>
-                <viewController id="5gY-pq-uQR" customClass="KeypadViewController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5gY-pq-uQR" customClass="KeypadViewController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3L3-de-FPM"/>
                         <viewControllerLayoutGuide type="bottom" id="MtQ-Gu-iKa"/>
@@ -51,6 +51,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -67,6 +70,9 @@
                                 <state key="normal" title="Thru">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -83,6 +89,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -99,6 +108,9 @@
                                 <state key="normal" title="Sneak">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -112,6 +124,9 @@
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -125,6 +140,9 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -141,6 +159,9 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -157,6 +178,9 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -173,21 +197,9 @@
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="widthClass=compact">
+                                <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-sQ-tXV">
-                                <rect key="frame" x="382" y="255" width="95" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wP5-sQ-tXV" secondAttribute="height" multiplier="1:1" priority="750" id="Bqn-ZN-x0E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <state key="normal">
-                                    <string key="title">Rem
-Dim</string>
-                                    <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -201,6 +213,9 @@ Dim</string>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -217,6 +232,9 @@ Dim</string>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -233,6 +251,9 @@ Dim</string>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -251,6 +272,9 @@ Dim</string>
 Last</string>
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -264,6 +288,9 @@ Last</string>
                                 <state key="normal" title="Out">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -280,6 +307,9 @@ Last</string>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -296,6 +326,9 @@ Last</string>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -312,6 +345,9 @@ Last</string>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -330,6 +366,9 @@ Last</string>
 Track</string>
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -343,6 +382,9 @@ Track</string>
                                 <state key="normal" title="Full">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -359,6 +401,9 @@ Track</string>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -375,6 +420,9 @@ Track</string>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 </variation>
@@ -391,6 +439,12 @@ Track</string>
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                </variation>
                                 <connections>
                                     <action selector="keypadButtonDidPress:" destination="5gY-pq-uQR" eventType="touchUpInside" id="ftk-H1-Cnd"/>
                                 </connections>
@@ -404,6 +458,9 @@ Track</string>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -420,6 +477,9 @@ Track</string>
                                 <state key="normal" title="At">
                                     <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 </variation>
@@ -436,6 +496,24 @@ Track</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-sQ-tXV">
+                                <rect key="frame" x="382" y="255" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wP5-sQ-tXV" secondAttribute="height" multiplier="1:1" priority="750" id="Bqn-ZN-x0E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal">
+                                    <string key="title">Rem
+Dim</string>
+                                    <color key="titleColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -588,7 +666,7 @@ Track</string>
         <!--Tab Bar Controller-->
         <scene sceneID="1zO-IK-NMc">
             <objects>
-                <tabBarController id="zUe-Vd-rhc" customClass="TabBarController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="zUe-Vd-rhc" customClass="TabBarController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="4K5-jG-oRB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
