@@ -9,8 +9,6 @@
 import UIKit
 
 class CirclesViewController: UIViewController {
-
-    let multipeerManager = MultipeerManager()
     
     var circle1: CircleView?
     var circle2: CircleView?
@@ -67,9 +65,9 @@ class CirclesViewController: UIViewController {
                 view.previousIntensity = view.intensityLevel
                 
                 if view.groupName == "Warm Front" {
-                    multipeerManager.sendCommand(Command(withKeystrokes: [k1Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
+                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k1Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
                 } else {
-                    multipeerManager.sendCommand(Command(withKeystrokes: [k2Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
+                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k2Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
                 }
             }
             recognizer.scale = 1

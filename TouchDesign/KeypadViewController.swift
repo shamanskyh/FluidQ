@@ -11,7 +11,6 @@ import MultipeerConnectivity
 
 class KeypadViewController: UIViewController {
 
-    let multipeerManager = MultipeerManager()
     var currentCommand: Command?
     
     override func viewDidLoad() {
@@ -43,11 +42,11 @@ class KeypadViewController: UIViewController {
                 currentCommand?.keystrokes.append(kAtKeystroke)
             case "Enter":
                 currentCommand?.keystrokes.append(kEnterKeystroke)
-                multipeerManager.sendCommand(currentCommand!)
+                (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(currentCommand!)
                 currentCommand = nil
             case "Out":
                 currentCommand?.keystrokes.append(kOutKeystroke)
-                multipeerManager.sendCommand(currentCommand!)
+                (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(currentCommand!)
                 currentCommand = nil
             case "Thru":
                 currentCommand?.keystrokes.append(kThruKeystroke)

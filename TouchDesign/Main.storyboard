@@ -541,7 +541,7 @@ Track</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqg-SA-Qsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="-360"/>
+            <point key="canvasLocation" x="268" y="-474"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1zO-IK-NMc">
