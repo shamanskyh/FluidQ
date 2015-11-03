@@ -77,7 +77,7 @@ class ViewController: NSViewController {
         // animate the scroll
         scrollView.hasVerticalScroller = false
         NSAnimationContext.runAnimationGroup({ (context: NSAnimationContext) -> Void in
-            context.duration = 0.5;
+            context.duration = 0.5
             context.allowsImplicitAnimation = true
             self.tableView.scrollRowToVisible(self.tableView.numberOfRows - 1)
             }, completionHandler: {
@@ -96,10 +96,10 @@ class ViewController: NSViewController {
         tableView.setDelegate(self)
         
         // find the USB port. This could be done better than guess-and-check...
-        serialFileDescriptor = open("/dev/cu.usbmodem1411", O_RDWR | O_NOCTTY | O_NONBLOCK);
+        serialFileDescriptor = open("/dev/cu.usbmodem1411", O_RDWR | O_NOCTTY | O_NONBLOCK)
         if (consoleConnectionStatus == false) {
             // try other port
-            serialFileDescriptor = open("/dev/cu.usbmodem1421", O_RDWR | O_NOCTTY | O_NONBLOCK);
+            serialFileDescriptor = open("/dev/cu.usbmodem1421", O_RDWR | O_NOCTTY | O_NONBLOCK)
         }
     }
 }
