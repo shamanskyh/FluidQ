@@ -17,13 +17,39 @@ class ViewController: NSViewController {
     @IBOutlet weak var scrollView: NSScrollView!
     @IBOutlet weak var tableView: NSTableView!
     
+    /// connection status label
+    @IBOutlet weak var statusLabel: NSTextField!
+    
     /// an ordered list of all commands sent
     private var previousCommands: [Command] = []
     
     let multipeerManager = MultipeerManager()
     
     /// a file descriptor to write to the serial port
-    let serialFileDescriptor = open("/dev/cu.usbmodem1411", O_RDWR | O_NOCTTY | O_NONBLOCK);
+    var serialFileDescriptor: CInt? {
+        didSet {
+            consoleConnectionStatus = (serialFileDescriptor != -1)
+        }
+    }
+    
+    /// variable that tracks iOS connection status
+    private var iOSConnectionStatus: Bool = false {
+        didSet {
+            updateConnectionLabel()
+        }
+    }
+    
+    /// variable that tracks console connection status
+    private var consoleConnectionStatus: Bool = false  {
+        didSet {
+            updateConnectionLabel()
+        }
+    }
+    
+    /// updates the UI when connections change
+    private func updateConnectionLabel() {
+        statusLabel.stringValue = "📱 " + (iOSConnectionStatus ? "Connected" : "Disconnected") + "      ⌨️ " + (consoleConnectionStatus ? "Connected" : "Disconnected")
+    }
     
     /// sends a command to the HID device and displays it in the list
     /// - Parameter command: the command to send
@@ -32,8 +58,10 @@ class ViewController: NSViewController {
         // actually send the command to the serial port
         // TODO: Handle modifier keys
         // TODO: Higher baud rate?
-        let stringToSend = String(command.keystrokes.map({ $0.keyEquivalent }))
-        write(serialFileDescriptor, stringToSend, stringToSend.characters.count)
+        if let serial = serialFileDescriptor {
+            let stringToSend = String(command.keystrokes.map({ $0.keyEquivalent }))
+            write(serial, stringToSend, stringToSend.characters.count)
+        }
         
         // append onto the array
         previousCommands.append(command)
@@ -66,12 +94,20 @@ class ViewController: NSViewController {
         // Swift conventions yet...
         tableView.setDataSource(self)
         tableView.setDelegate(self)
+        
+        // find the USB port. This could be done better than guess-and-check...
+        serialFileDescriptor = open("/dev/cu.usbmodem1411", O_RDWR | O_NOCTTY | O_NONBLOCK);
+        if (consoleConnectionStatus == false) {
+            // try other port
+            serialFileDescriptor = open("/dev/cu.usbmodem1421", O_RDWR | O_NOCTTY | O_NONBLOCK);
+        }
     }
 }
 
 extension ViewController: MultipeerManagerDelegate {
     func connectedDevicesChanged(manager: MultipeerManager, connectedDevices: [String]) {
         NSLog("%@", connectedDevices)
+        iOSConnectionStatus = connectedDevices.count > 0
     }
     
     func commandDidSend(manager: MultipeerManager, command: Command) {

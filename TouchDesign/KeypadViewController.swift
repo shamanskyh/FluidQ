@@ -37,6 +37,8 @@ class KeypadViewController: UIViewController {
         }
         
         switch (sender.titleLabel!.text!) {
+            case "+":   // plus should be sent as the equals key (no shift)
+                currentCommand?.keystrokes.append(kAndKeystroke)
             case "At":
                 currentCommand?.keystrokes.append(kAtKeystroke)
             case "Enter":

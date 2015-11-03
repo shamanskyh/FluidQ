@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15B30a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15C27e" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9052"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9527.1"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -670,19 +670,18 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TouchDesign_Server" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="244"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="28" horizontalPageScroll="10" verticalLineScroll="28" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhR-dk-efp">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                                <rect key="frame" x="0.0" y="20" width="480" height="224"/>
                                 <clipView key="contentView" id="GMr-bn-Zaj">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="224"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="26" viewBased="YES" id="AA7-hE-fe0">
                                             <rect key="frame" x="0.0" y="0.0" width="480" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <tableViewGridLines key="gridStyleMask" horizontal="YES"/>
@@ -710,7 +709,6 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="ZuJ-9G-aDi"/>
                                                                     </constraints>
-                                                                    <animations/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Previous Command" id="BnT-eF-ud9">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -724,7 +722,6 @@
                                                                 <constraint firstItem="diK-qW-hyk" firstAttribute="leading" secondItem="4p3-wy-9Po" secondAttribute="leading" constant="3" id="ZR7-rU-rOO"/>
                                                                 <constraint firstItem="diK-qW-hyk" firstAttribute="top" secondItem="4p3-wy-9Po" secondAttribute="top" constant="4" id="jah-xA-XRN"/>
                                                             </constraints>
-                                                            <animations/>
                                                             <connections>
                                                                 <outlet property="textField" destination="diK-qW-hyk" id="F5C-Bb-ycH"/>
                                                             </connections>
@@ -734,38 +731,48 @@
                                             </tableColumns>
                                         </tableView>
                                     </subviews>
-                                    <animations/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <animations/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="r4b-l8-adD">
-                                    <rect key="frame" x="1" y="253" width="478" height="16"/>
+                                    <rect key="frame" x="0.0" y="208" width="480" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="3VI-Nl-41W">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-hz-wIQ">
+                                <rect key="frame" x="3" y="0.0" width="474" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="FlE-Gi-ZER"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="📱 Disconnected      ⌨️ Disconnected" id="TlF-Q9-aZd">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="PhR-dk-efp" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="GIK-Mw-YBg"/>
+                            <constraint firstAttribute="trailing" secondItem="BCJ-hz-wIQ" secondAttribute="trailing" constant="5" id="Z5x-O8-4wt"/>
                             <constraint firstAttribute="trailing" secondItem="PhR-dk-efp" secondAttribute="trailing" id="bTb-Xz-EOU"/>
+                            <constraint firstItem="BCJ-hz-wIQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="fQ4-Pm-Rji"/>
                             <constraint firstItem="PhR-dk-efp" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="gST-QU-my0"/>
-                            <constraint firstAttribute="bottom" secondItem="PhR-dk-efp" secondAttribute="bottom" id="iA2-cW-CMU"/>
+                            <constraint firstAttribute="bottom" secondItem="PhR-dk-efp" secondAttribute="bottom" constant="20" id="iA2-cW-CMU"/>
+                            <constraint firstAttribute="bottom" secondItem="BCJ-hz-wIQ" secondAttribute="bottom" id="rUR-xO-oZC"/>
                         </constraints>
-                        <animations/>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="PhR-dk-efp" id="x7e-Id-9we"/>
+                        <outlet property="statusLabel" destination="BCJ-hz-wIQ" id="U9M-aE-0W7"/>
                         <outlet property="tableView" destination="AA7-hE-fe0" id="JsX-4k-Gx8"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="619"/>
+            <point key="canvasLocation" x="75" y="641"/>
         </scene>
     </scenes>
 </document>
