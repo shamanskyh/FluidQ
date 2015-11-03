@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C555B1BE864270023A64C /* AppDelegate.swift */; };
+		4A2C55631BE864270023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555D1BE864270023A64C /* Assets.xcassets */; };
+		4A2C55641BE864270023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555E1BE864270023A64C /* Main.storyboard */; };
+		4A2C55651BE864270023A64C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C55601BE864270023A64C /* Info.plist */; };
+		4A2C55661BE864270023A64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55611BE864270023A64C /* ViewController.swift */; };
+		4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55681BE864470023A64C /* AppDelegate.swift */; };
+		4A2C55721BE864470023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C55691BE864470023A64C /* Assets.xcassets */; };
+		4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556B1BE864470023A64C /* CirclesViewController.swift */; };
+		4A2C55741BE864470023A64C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556C1BE864470023A64C /* CircleView.swift */; };
+		4A2C55751BE864470023A64C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C556D1BE864470023A64C /* Info.plist */; };
+		4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556E1BE864470023A64C /* KeypadViewController.swift */; };
+		4A2C55771BE864470023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C556F1BE864470023A64C /* Main.storyboard */; };
+		4A2C55781BE864470023A64C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55701BE864470023A64C /* TabBarController.swift */; };
 		4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
 		4A8C57E81BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
-		4A8C57EA1BCC8F0400C2C98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8C57E91BCC8F0400C2C98C /* Main.storyboard */; };
-		4A8C57EC1BCC962A00C2C98C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57EB1BCC962A00C2C98C /* TabBarController.swift */; };
-		4A8C57EF1BCC9A3B00C2C98C /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57EE1BCC9A3B00C2C98C /* CirclesViewController.swift */; };
-		4A8C57F11BCC9A9A00C2C98C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57F01BCC9A9A00C2C98C /* CircleView.swift */; };
-		4A9C9ACF1BBB5E710098FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9ACE1BBB5E710098FC5A /* AppDelegate.swift */; };
-		4A9C9AD11BBB5E710098FC5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9AD01BBB5E710098FC5A /* ViewController.swift */; };
-		4A9C9AD31BBB5E710098FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C9AD21BBB5E710098FC5A /* Assets.xcassets */; };
-		4A9C9AD61BBB5E710098FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C9AD41BBB5E710098FC5A /* Main.storyboard */; };
-		4A9C9AFB1BBB63AC0098FC5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9AFA1BBB63AC0098FC5A /* AppDelegate.swift */; };
-		4A9C9AFD1BBB63AC0098FC5A /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9AFC1BBB63AC0098FC5A /* KeypadViewController.swift */; };
-		4A9C9B021BBB63AC0098FC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C9B011BBB63AC0098FC5A /* Assets.xcassets */; };
 		4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B0D1BBB64D00098FC5A /* Command.swift */; };
 		4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B0D1BBB64D00098FC5A /* Command.swift */; };
 		4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B101BBB65740098FC5A /* Keystroke.swift */; };
@@ -31,26 +33,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A2C555B1BE864270023A64C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A2C555D1BE864270023A64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A2C555F1BE864270023A64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A2C55601BE864270023A64C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2C55611BE864270023A64C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A2C55681BE864470023A64C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A2C55691BE864470023A64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A2C556B1BE864470023A64C /* CirclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesViewController.swift; sourceTree = "<group>"; };
+		4A2C556C1BE864470023A64C /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		4A2C556D1BE864470023A64C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2C556E1BE864470023A64C /* KeypadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeypadViewController.swift; sourceTree = "<group>"; };
+		4A2C556F1BE864470023A64C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4A2C55701BE864470023A64C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4A3C55431BC3860E009CBAAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Shared Models/Constants.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A45EECC1BE6E7A100DFD658 /* Outgoing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Outgoing.ino; path = Arduino/Outgoing/Outgoing.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerManager.swift; path = "Shared Models/MultipeerManager.swift"; sourceTree = "<group>"; };
-		4A8C57E91BCC8F0400C2C98C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4A8C57EB1BCC962A00C2C98C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		4A8C57EE1BCC9A3B00C2C98C /* CirclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CirclesViewController.swift; path = Circles/CirclesViewController.swift; sourceTree = "<group>"; };
-		4A8C57F01BCC9A9A00C2C98C /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = Circles/CircleView.swift; sourceTree = "<group>"; };
-		4A9C9ACB1BBB5E710098FC5A /* TouchDesign Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TouchDesign Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9C9ACE1BBB5E710098FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A9C9AD01BBB5E710098FC5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A9C9AD21BBB5E710098FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A9C9AD51BBB5E710098FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A9C9AD71BBB5E710098FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A9C9AF81BBB63AC0098FC5A /* TouchDesign Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TouchDesign Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9C9AFA1BBB63AC0098FC5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A9C9AFC1BBB63AC0098FC5A /* KeypadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadViewController.swift; sourceTree = "<group>"; };
-		4A9C9B011BBB63AC0098FC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A9C9B061BBB63AC0098FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A9C9B0A1BBB63D90098FC5A /* TouchDesign.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TouchDesign.entitlements; sourceTree = "<group>"; };
+		4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FluidQ Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FluidQ Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C9B0D1BBB64D00098FC5A /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "Shared Models/Command.swift"; sourceTree = "<group>"; };
 		4A9C9B101BBB65740098FC5A /* Keystroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keystroke.swift; path = "Shared Models/Keystroke.swift"; sourceTree = "<group>"; };
 		4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Shared Models/Utilities.swift"; sourceTree = "<group>"; };
@@ -74,6 +75,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A2C555A1BE864270023A64C /* FluidQ Server */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C555B1BE864270023A64C /* AppDelegate.swift */,
+				4A2C555D1BE864270023A64C /* Assets.xcassets */,
+				4A2C555E1BE864270023A64C /* Main.storyboard */,
+				4A2C55601BE864270023A64C /* Info.plist */,
+				4A2C55611BE864270023A64C /* ViewController.swift */,
+			);
+			path = "FluidQ Server";
+			sourceTree = "<group>";
+		};
+		4A2C55671BE864470023A64C /* FluidQ */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C55681BE864470023A64C /* AppDelegate.swift */,
+				4A2C55691BE864470023A64C /* Assets.xcassets */,
+				4A2C556A1BE864470023A64C /* Circles */,
+				4A2C556D1BE864470023A64C /* Info.plist */,
+				4A2C556E1BE864470023A64C /* KeypadViewController.swift */,
+				4A2C556F1BE864470023A64C /* Main.storyboard */,
+				4A2C55701BE864470023A64C /* TabBarController.swift */,
+			);
+			path = FluidQ;
+			sourceTree = "<group>";
+		};
+		4A2C556A1BE864470023A64C /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				4A2C556B1BE864470023A64C /* CirclesViewController.swift */,
+				4A2C556C1BE864470023A64C /* CircleView.swift */,
+			);
+			path = Circles;
+			sourceTree = "<group>";
+		};
 		4A45EEC81BE6E57400DFD658 /* Arduino */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,21 +135,12 @@
 			name = Outgoing;
 			sourceTree = "<group>";
 		};
-		4A8C57ED1BCC99FD00C2C98C /* Circles */ = {
-			isa = PBXGroup;
-			children = (
-				4A8C57EE1BCC9A3B00C2C98C /* CirclesViewController.swift */,
-				4A8C57F01BCC9A9A00C2C98C /* CircleView.swift */,
-			);
-			name = Circles;
-			sourceTree = "<group>";
-		};
 		4A9C9AC21BBB5E710098FC5A = {
 			isa = PBXGroup;
 			children = (
 				4A9C9B0C1BBB64A90098FC5A /* Shared Models */,
-				4A9C9ACD1BBB5E710098FC5A /* TouchDesign Server */,
-				4A9C9AF91BBB63AC0098FC5A /* TouchDesign */,
+				4A2C555A1BE864270023A64C /* FluidQ Server */,
+				4A2C55671BE864470023A64C /* FluidQ */,
 				4A45EEC81BE6E57400DFD658 /* Arduino */,
 				4A9C9ACC1BBB5E710098FC5A /* Products */,
 			);
@@ -122,37 +149,10 @@
 		4A9C9ACC1BBB5E710098FC5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A9C9ACB1BBB5E710098FC5A /* TouchDesign Server.app */,
-				4A9C9AF81BBB63AC0098FC5A /* TouchDesign Server.app */,
+				4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */,
+				4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4A9C9ACD1BBB5E710098FC5A /* TouchDesign Server */ = {
-			isa = PBXGroup;
-			children = (
-				4A9C9B0A1BBB63D90098FC5A /* TouchDesign.entitlements */,
-				4A9C9ACE1BBB5E710098FC5A /* AppDelegate.swift */,
-				4A9C9AD01BBB5E710098FC5A /* ViewController.swift */,
-				4A9C9AD21BBB5E710098FC5A /* Assets.xcassets */,
-				4A9C9AD41BBB5E710098FC5A /* Main.storyboard */,
-				4A9C9AD71BBB5E710098FC5A /* Info.plist */,
-			);
-			path = "TouchDesign Server";
-			sourceTree = "<group>";
-		};
-		4A9C9AF91BBB63AC0098FC5A /* TouchDesign */ = {
-			isa = PBXGroup;
-			children = (
-				4A8C57ED1BCC99FD00C2C98C /* Circles */,
-				4A9C9AFA1BBB63AC0098FC5A /* AppDelegate.swift */,
-				4A9C9AFC1BBB63AC0098FC5A /* KeypadViewController.swift */,
-				4A8C57EB1BCC962A00C2C98C /* TabBarController.swift */,
-				4A9C9B011BBB63AC0098FC5A /* Assets.xcassets */,
-				4A8C57E91BCC8F0400C2C98C /* Main.storyboard */,
-				4A9C9B061BBB63AC0098FC5A /* Info.plist */,
-			);
-			path = TouchDesign;
 			sourceTree = "<group>";
 		};
 		4A9C9B0C1BBB64A90098FC5A /* Shared Models */ = {
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A9C9ACA1BBB5E710098FC5A /* TouchDesign Server */ = {
+		4A9C9ACA1BBB5E710098FC5A /* FluidQ Server */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A9C9ADA1BBB5E710098FC5A /* Build configuration list for PBXNativeTarget "TouchDesign Server" */;
+			buildConfigurationList = 4A9C9ADA1BBB5E710098FC5A /* Build configuration list for PBXNativeTarget "FluidQ Server" */;
 			buildPhases = (
 				4A9C9AC71BBB5E710098FC5A /* Sources */,
 				4A9C9AC81BBB5E710098FC5A /* Frameworks */,
@@ -182,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = "TouchDesign Server";
+			name = "FluidQ Server";
 			productName = "TouchDesign Server";
-			productReference = 4A9C9ACB1BBB5E710098FC5A /* TouchDesign Server.app */;
+			productReference = 4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A9C9AF71BBB63AC0098FC5A /* TouchDesign */ = {
+		4A9C9AF71BBB63AC0098FC5A /* FluidQ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A9C9B071BBB63AC0098FC5A /* Build configuration list for PBXNativeTarget "TouchDesign" */;
+			buildConfigurationList = 4A9C9B071BBB63AC0098FC5A /* Build configuration list for PBXNativeTarget "FluidQ" */;
 			buildPhases = (
 				4A9C9AF41BBB63AC0098FC5A /* Sources */,
 				4A9C9AF51BBB63AC0098FC5A /* Frameworks */,
@@ -199,9 +199,9 @@
 			);
 			dependencies = (
 			);
-			name = TouchDesign;
+			name = FluidQ;
 			productName = TouchDesign;
-			productReference = 4A9C9AF81BBB63AC0098FC5A /* TouchDesign Server.app */;
+			productReference = 4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A9C9AC61BBB5E710098FC5A /* Build configuration list for PBXProject "TouchDesign" */;
+			buildConfigurationList = 4A9C9AC61BBB5E710098FC5A /* Build configuration list for PBXProject "FluidQ" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,8 +242,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A9C9ACA1BBB5E710098FC5A /* TouchDesign Server */,
-				4A9C9AF71BBB63AC0098FC5A /* TouchDesign */,
+				4A9C9ACA1BBB5E710098FC5A /* FluidQ Server */,
+				4A9C9AF71BBB63AC0098FC5A /* FluidQ */,
 			);
 		};
 /* End PBXProject section */
@@ -253,8 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9C9AD31BBB5E710098FC5A /* Assets.xcassets in Resources */,
-				4A9C9AD61BBB5E710098FC5A /* Main.storyboard in Resources */,
+				4A2C55631BE864270023A64C /* Assets.xcassets in Resources */,
+				4A2C55641BE864270023A64C /* Main.storyboard in Resources */,
+				4A2C55651BE864270023A64C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9C9B021BBB63AC0098FC5A /* Assets.xcassets in Resources */,
-				4A8C57EA1BCC8F0400C2C98C /* Main.storyboard in Resources */,
+				4A2C55771BE864470023A64C /* Main.storyboard in Resources */,
+				4A2C55751BE864470023A64C /* Info.plist in Resources */,
+				4A2C55721BE864470023A64C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9C9AD11BBB5E710098FC5A /* ViewController.swift in Sources */,
-				4A9C9ACF1BBB5E710098FC5A /* AppDelegate.swift in Sources */,
+				4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */,
 				4AD017DC1BCE09CD00C9DEC5 /* Utilities.swift in Sources */,
 				4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */,
+				4A2C55661BE864270023A64C /* ViewController.swift in Sources */,
 				4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */,
 				4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */,
 			);
@@ -288,13 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8C57F11BCC9A9A00C2C98C /* CircleView.swift in Sources */,
-				4A9C9AFD1BBB63AC0098FC5A /* KeypadViewController.swift in Sources */,
-				4A9C9AFB1BBB63AC0098FC5A /* AppDelegate.swift in Sources */,
-				4A8C57EF1BCC9A3B00C2C98C /* CirclesViewController.swift in Sources */,
+				4A2C55741BE864470023A64C /* CircleView.swift in Sources */,
+				4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */,
+				4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */,
+				4A2C55781BE864470023A64C /* TabBarController.swift in Sources */,
+				4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */,
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
-				4A8C57EC1BCC962A00C2C98C /* TabBarController.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
 				4AD017DD1BCE09CE00C9DEC5 /* Utilities.swift in Sources */,
 				4A8C57E81BCC079600C2C98C /* MultipeerManager.swift in Sources */,
@@ -304,10 +306,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A9C9AD41BBB5E710098FC5A /* Main.storyboard */ = {
+		4A2C555E1BE864270023A64C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A9C9AD51BBB5E710098FC5A /* Base */,
+				4A2C555F1BE864270023A64C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -403,10 +405,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "TouchDesign Server/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.TouchDesign-Server";
-				PRODUCT_NAME = "TouchDesign Server";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
+				PRODUCT_NAME = "FluidQ Server";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -417,10 +419,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "TouchDesign Server/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.TouchDesign-Server";
-				PRODUCT_NAME = "TouchDesign Server";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
+				PRODUCT_NAME = "FluidQ Server";
 			};
 			name = Release;
 		};
@@ -430,11 +432,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TouchDesign/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FluidQ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.TouchDesign;
-				PRODUCT_NAME = "TouchDesign Server";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
+				PRODUCT_NAME = "FluidQ Server";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,11 +448,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TouchDesign/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FluidQ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.TouchDesign;
-				PRODUCT_NAME = "TouchDesign Server";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
+				PRODUCT_NAME = "FluidQ Server";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -460,7 +462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A9C9AC61BBB5E710098FC5A /* Build configuration list for PBXProject "TouchDesign" */ = {
+		4A9C9AC61BBB5E710098FC5A /* Build configuration list for PBXProject "FluidQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A9C9AD81BBB5E710098FC5A /* Debug */,
@@ -469,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A9C9ADA1BBB5E710098FC5A /* Build configuration list for PBXNativeTarget "TouchDesign Server" */ = {
+		4A9C9ADA1BBB5E710098FC5A /* Build configuration list for PBXNativeTarget "FluidQ Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A9C9ADB1BBB5E710098FC5A /* Debug */,
@@ -478,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A9C9B071BBB63AC0098FC5A /* Build configuration list for PBXNativeTarget "TouchDesign" */ = {
+		4A9C9B071BBB63AC0098FC5A /* Build configuration list for PBXNativeTarget "FluidQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A9C9B081BBB63AC0098FC5A /* Debug */,

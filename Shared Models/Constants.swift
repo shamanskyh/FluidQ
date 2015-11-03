@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  TouchDesign
+//  FluidQ
 //
 //  Created by Harry Shamansky on 10/6/15.
 //  Copyright © 2015 Harry Shamansky. All rights reserved.

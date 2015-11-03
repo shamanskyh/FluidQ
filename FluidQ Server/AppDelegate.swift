@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TouchDesign Server
+//  FluidQ Server
 //
 //  Created by Harry Shamansky on 9/29/15.
 //  Copyright © 2015 Harry Shamansky. All rights reserved.

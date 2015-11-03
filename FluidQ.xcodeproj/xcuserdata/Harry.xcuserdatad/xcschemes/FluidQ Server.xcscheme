@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
-               BuildableName = "TouchDesign Server.app"
-               BlueprintName = "TouchDesign Server"
-               ReferencedContainer = "container:TouchDesign.xcodeproj">
+               BuildableName = "FluidQ Server.app"
+               BlueprintName = "FluidQ Server"
+               ReferencedContainer = "container:FluidQ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
-            BuildableName = "TouchDesign Server.app"
-            BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign.xcodeproj">
+            BuildableName = "FluidQ Server.app"
+            BlueprintName = "FluidQ Server"
+            ReferencedContainer = "container:FluidQ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
-            BuildableName = "TouchDesign Server.app"
-            BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign.xcodeproj">
+            BuildableName = "FluidQ Server.app"
+            BlueprintName = "FluidQ Server"
+            ReferencedContainer = "container:FluidQ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4A9C9ACA1BBB5E710098FC5A"
-            BuildableName = "TouchDesign Server.app"
-            BlueprintName = "TouchDesign Server"
-            ReferencedContainer = "container:TouchDesign.xcodeproj">
+            BuildableName = "FluidQ Server.app"
+            BlueprintName = "FluidQ Server"
+            ReferencedContainer = "container:FluidQ.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

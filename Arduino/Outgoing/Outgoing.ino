@@ -1,6 +1,6 @@
 //
 //  Outgoing.ino
-//  TouchDesign
+//  FluidQ Outgoing Arduino
 //
 //  Created by Harry Shamansky on 11/1/15.
 //  Copyright © 2015 Harry Shamansky. All rights reserved.

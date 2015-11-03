@@ -10,7 +10,7 @@
         <!--Circles-->
         <scene sceneID="NvX-uJ-QTU">
             <objects>
-                <viewController id="Pi2-C8-A0U" customClass="CirclesViewController" customModule="TouchDesign_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pi2-C8-A0U" customClass="CirclesViewController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lYj-fm-TTc"/>
                         <viewControllerLayoutGuide type="bottom" id="luB-pQ-V0J"/>
@@ -29,7 +29,7 @@
         <!--Keypad-->
         <scene sceneID="EYg-wM-h8r">
             <objects>
-                <viewController id="5gY-pq-uQR" customClass="KeypadViewController" customModule="TouchDesign_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5gY-pq-uQR" customClass="KeypadViewController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3L3-de-FPM"/>
                         <viewControllerLayoutGuide type="bottom" id="MtQ-Gu-iKa"/>
@@ -588,7 +588,7 @@ Track</string>
         <!--Tab Bar Controller-->
         <scene sceneID="1zO-IK-NMc">
             <objects>
-                <tabBarController id="zUe-Vd-rhc" customClass="TabBarController" customModule="TouchDesign_Server" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="zUe-Vd-rhc" customClass="TabBarController" customModule="FluidQ_Server" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="4K5-jG-oRB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

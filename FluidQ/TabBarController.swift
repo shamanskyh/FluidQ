@@ -1,6 +1,6 @@
 //
 //  TabBarController.swift
-//  TouchDesign
+//  FluidQ
 //
 //  Created by Harry Shamansky on 10/12/15.
 //  Copyright © 2015 Harry Shamansky. All rights reserved.

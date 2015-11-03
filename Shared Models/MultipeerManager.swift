@@ -1,6 +1,6 @@
 //
 //  MultipeerManager.swift
-//  TouchDesign
+//  FluidQ
 //
 //  Created by Harry Shamansky on 10/12/15. Based on Ralf Ebert's work.
 //  Copyright © 2015 Harry Shamansky. All rights reserved.
