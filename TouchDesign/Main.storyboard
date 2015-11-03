@@ -547,6 +547,7 @@ Track</string>
         <scene sceneID="1zO-IK-NMc">
             <objects>
                 <tabBarController id="zUe-Vd-rhc" customClass="TabBarController" customModule="TouchDesign_Server" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="4K5-jG-oRB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
