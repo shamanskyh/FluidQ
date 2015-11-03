@@ -408,6 +408,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
+				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = "FluidQ Server";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -422,6 +423,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
+				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = "FluidQ Server";
 			};
 			name = Release;
@@ -436,6 +438,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
+				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = FluidQ;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +455,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
+				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = FluidQ;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
