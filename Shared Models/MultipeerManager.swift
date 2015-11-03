@@ -16,12 +16,20 @@ protocol MultipeerManagerDelegate {
 
 class MultipeerManager: NSObject {
 
-    private let myPeerId = MCPeerID(displayName: NSUUID().UUIDString)
+    private let myPeerId: MCPeerID
     private let serviceAdvertiser: MCNearbyServiceAdvertiser
     private let serviceBrowser: MCNearbyServiceBrowser
     var delegate: MultipeerManagerDelegate?
     
     override init() {
+        
+        #if os(iOS)
+            myPeerId = MCPeerID(displayName: UIDevice.currentDevice().name)
+        #else
+            myPeerId = MCPeerID(displayName: NSHost.currentHost().localizedName!)
+        #endif
+            
+        
         self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerId, discoveryInfo: nil, serviceType: kMultipeerServiceType)
         
         self.serviceBrowser = MCNearbyServiceBrowser(peer: myPeerId, serviceType: kMultipeerServiceType)
