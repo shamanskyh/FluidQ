@@ -51,7 +51,7 @@
 		4A45EECC1BE6E7A100DFD658 /* Outgoing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Outgoing.ino; path = Arduino/Outgoing/Outgoing.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerManager.swift; path = "Shared Models/MultipeerManager.swift"; sourceTree = "<group>"; };
 		4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FluidQ Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FluidQ Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9C9AF81BBB63AC0098FC5A /* FluidQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluidQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C9B0D1BBB64D00098FC5A /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "Shared Models/Command.swift"; sourceTree = "<group>"; };
 		4A9C9B101BBB65740098FC5A /* Keystroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keystroke.swift; path = "Shared Models/Keystroke.swift"; sourceTree = "<group>"; };
 		4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Shared Models/Utilities.swift"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */,
-				4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */,
+				4A9C9AF81BBB63AC0098FC5A /* FluidQ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			);
 			name = FluidQ;
 			productName = TouchDesign;
-			productReference = 4A9C9AF81BBB63AC0098FC5A /* FluidQ Server.app */;
+			productReference = 4A9C9AF81BBB63AC0098FC5A /* FluidQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -436,7 +436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
-				PRODUCT_NAME = "FluidQ Server";
+				PRODUCT_NAME = FluidQ;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,7 +452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harryshamansky.FluidQ;
-				PRODUCT_NAME = "FluidQ Server";
+				PRODUCT_NAME = FluidQ;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
