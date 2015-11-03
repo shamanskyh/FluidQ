@@ -19,6 +19,11 @@ func doubleToKeystrokes(number: Double) -> [Keystroke] {
     // try the integer representation if possible
     numberString = (number % 1 == 0) ? String(Int(number)) : String(format: "%.2f", arguments: [number])
 
+    // pad with zeros
+    if Int(number) < 10 {
+        numberString = "0" + numberString!
+    }
+    
     // turn the characters into keystrokes
     guard let finalString = numberString else {
         return []
