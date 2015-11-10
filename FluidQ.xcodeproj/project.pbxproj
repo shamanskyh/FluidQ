@@ -10,7 +10,6 @@
 		4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C555B1BE864270023A64C /* AppDelegate.swift */; };
 		4A2C55631BE864270023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555D1BE864270023A64C /* Assets.xcassets */; };
 		4A2C55641BE864270023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555E1BE864270023A64C /* Main.storyboard */; };
-		4A2C55651BE864270023A64C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C55601BE864270023A64C /* Info.plist */; };
 		4A2C55661BE864270023A64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55611BE864270023A64C /* ViewController.swift */; };
 		4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55681BE864470023A64C /* AppDelegate.swift */; };
 		4A2C55721BE864470023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C55691BE864470023A64C /* Assets.xcassets */; };
@@ -267,7 +266,6 @@
 			files = (
 				4A2C55631BE864270023A64C /* Assets.xcassets in Resources */,
 				4A2C55641BE864270023A64C /* Main.storyboard in Resources */,
-				4A2C55651BE864270023A64C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
