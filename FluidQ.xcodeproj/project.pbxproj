@@ -16,11 +16,14 @@
 		4A2C55721BE864470023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C55691BE864470023A64C /* Assets.xcassets */; };
 		4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556B1BE864470023A64C /* CirclesViewController.swift */; };
 		4A2C55741BE864470023A64C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556C1BE864470023A64C /* CircleView.swift */; };
-		4A2C55751BE864470023A64C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C556D1BE864470023A64C /* Info.plist */; };
 		4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C556E1BE864470023A64C /* KeypadViewController.swift */; };
 		4A2C55771BE864470023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C556F1BE864470023A64C /* Main.storyboard */; };
 		4A2C55781BE864470023A64C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C55701BE864470023A64C /* TabBarController.swift */; };
 		4A33C1B61BF255D800AE8566 /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1B51BF255D800AE8566 /* DropView.swift */; };
+		4A33C1B91BF2682A00AE8566 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1B81BF2682A00AE8566 /* Instrument.swift */; };
+		4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1B81BF2682A00AE8566 /* Instrument.swift */; };
+		4A33C1BC1BF2699D00AE8566 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */; };
+		4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */; };
 		4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
@@ -48,6 +51,9 @@
 		4A2C556F1BE864470023A64C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4A2C55701BE864470023A64C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4A33C1B51BF255D800AE8566 /* DropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		4A33C1B71BF2611F00AE8566 /* FluidQ Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "FluidQ Server.entitlements"; sourceTree = "<group>"; };
+		4A33C1B81BF2682A00AE8566 /* Instrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instrument.swift; path = "Shared Models/Instrument.swift"; sourceTree = "<group>"; };
+		4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorGenerator.swift; path = "Shared Models/ColorGenerator.swift"; sourceTree = "<group>"; };
 		4A3C55431BC3860E009CBAAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Shared Models/Constants.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A45EECC1BE6E7A100DFD658 /* Outgoing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Outgoing.ino; path = Arduino/Outgoing/Outgoing.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -80,6 +86,7 @@
 		4A2C555A1BE864270023A64C /* FluidQ Server */ = {
 			isa = PBXGroup;
 			children = (
+				4A33C1B71BF2611F00AE8566 /* FluidQ Server.entitlements */,
 				4A2C555B1BE864270023A64C /* AppDelegate.swift */,
 				4A2C555D1BE864270023A64C /* Assets.xcassets */,
 				4A2C555E1BE864270023A64C /* Main.storyboard */,
@@ -161,8 +168,10 @@
 		4A9C9B0C1BBB64A90098FC5A /* Shared Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */,
 				4A9C9B0D1BBB64D00098FC5A /* Command.swift */,
 				4A3C55431BC3860E009CBAAE /* Constants.swift */,
+				4A33C1B81BF2682A00AE8566 /* Instrument.swift */,
 				4A9C9B101BBB65740098FC5A /* Keystroke.swift */,
 				4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */,
 				4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */,
@@ -222,7 +231,7 @@
 						DevelopmentTeam = B5TXHQBF3Z;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -267,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2C55771BE864470023A64C /* Main.storyboard in Resources */,
-				4A2C55751BE864470023A64C /* Info.plist in Resources */,
 				4A2C55721BE864470023A64C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,8 @@
 				4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4A2C55661BE864270023A64C /* ViewController.swift in Sources */,
 				4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */,
+				4A33C1BC1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,
+				4A33C1B91BF2682A00AE8566 /* Instrument.swift in Sources */,
 				4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +312,8 @@
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
+				4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */,
+				4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,
 				4AD017DD1BCE09CE00C9DEC5 /* Utilities.swift in Sources */,
 				4A8C57E81BCC079600C2C98C /* MultipeerManager.swift in Sources */,
 			);
@@ -408,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "FluidQ Server/FluidQ Server.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -423,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "FluidQ Server/FluidQ Server.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
