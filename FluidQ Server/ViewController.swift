@@ -20,6 +20,9 @@ class ViewController: NSViewController {
     /// connection status label
     @IBOutlet weak var statusLabel: NSTextField!
     
+    /// the drop target
+    @IBOutlet weak var dropView: DropView!
+    
     /// an ordered list of all commands sent
     private var previousCommands: [Command] = []
     
@@ -101,6 +104,8 @@ class ViewController: NSViewController {
             // try other port
             serialFileDescriptor = open("/dev/cu.usbmodem1421", O_RDWR | O_NOCTTY | O_NONBLOCK)
         }
+        
+        dropView.delegate = self
     }
 }
 
@@ -137,4 +142,12 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         return cell
     }
     
+}
+
+extension ViewController: DropViewDelegate {
+    func sendRawFile(text: String) {
+        
+        // TODO: implement this
+        return
+    }
 }
