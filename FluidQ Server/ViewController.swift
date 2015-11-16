@@ -91,7 +91,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        multipeerManager.delegate = self
+        multipeerManager.serverDelegate = self
         
         // Not sure why this AppKit class doesn't seem to be updated using
         // Swift conventions yet...
@@ -109,8 +109,8 @@ class ViewController: NSViewController {
     }
 }
 
-extension ViewController: MultipeerManagerDelegate {
-    func connectedDevicesChanged(manager: MultipeerManager, connectedDevices: [String]) {
+extension ViewController: MultipeerManagerServerDelegate {
+    func connectedDevicesDidChange(manager: MultipeerManager, connectedDevices: [String]) {
         NSLog("%@", connectedDevices)
         iOSConnectionStatus = connectedDevices.count > 0
     }
@@ -147,7 +147,73 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
 extension ViewController: DropViewDelegate {
     func sendRawFile(text: String) {
         
-        // TODO: implement this
-        return
+        // convert the tab delimited values into Instruments and send the array
+        // borrowed from Precircuiter
+        // http://github.com/shamanskyh/Precircuiter
+        var headers: [String] = []
+        var finishedHeaders: Bool = false
+        var currentKeyword: String = ""
+        var currentPosition: Int = 0
+        var currentInstrument: Instrument = Instrument(UID: nil, location: nil)
+        
+        var lights: [Instrument] = []
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)) {
+            for char in text.characters {
+                if !finishedHeaders {
+                    if char == "\t" {
+                        headers.append(currentKeyword)
+                        currentKeyword = ""
+                    } else if char == "\n" || char == "\r" || char == "\r\n" {
+                        headers.append(currentKeyword)
+                        currentKeyword = ""
+                        finishedHeaders = true
+                    } else {
+                        currentKeyword.append(char)
+                    }
+                } else {
+                    if char == "\t" {
+                        
+                        guard currentPosition < headers.count else {
+                            // TODO: error handling
+                            return
+                        }
+                        
+                        do {
+                            try addPropertyToInstrument(&currentInstrument, propertyString: headers[currentPosition++], propertyValue: currentKeyword)
+                        } catch {
+                            // TODO: error handling
+                            return
+                        }
+                        
+                        currentKeyword = ""
+                    } else if char == "\n" || char == "\r" || char == "\r\n" {
+                        
+                        guard currentPosition < headers.count else {
+                            // TODO: error handling
+                            return
+                        }
+                        
+                        // finish the last property
+                        do {
+                            try addPropertyToInstrument(&currentInstrument, propertyString: headers[currentPosition], propertyValue: currentKeyword)
+                        } catch {
+                            // TODO: error handling
+                            return
+                        }
+                        
+                        currentKeyword = ""
+                        currentPosition = 0
+                        if currentInstrument.deviceType == .Light {
+                            lights.append(currentInstrument)
+                        }
+                        currentInstrument = Instrument(UID: nil, location: nil)
+                    } else {
+                        currentKeyword.append(char)
+                    }
+                }
+            }
+            self.multipeerManager.sendInstruments(lights)
+        }
     }
 }

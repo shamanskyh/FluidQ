@@ -9,9 +9,13 @@
 import Foundation
 import MultipeerConnectivity
 
-protocol MultipeerManagerDelegate {
-    func connectedDevicesChanged(manager: MultipeerManager, connectedDevices: [String])
+protocol MultipeerManagerServerDelegate {
+    func connectedDevicesDidChange(manager: MultipeerManager, connectedDevices: [String])
     func commandDidSend(manager: MultipeerManager, command: Command)
+}
+
+protocol MultipeerManagerClientDelegate {
+    func instrumentsDidSend(manager: MultipeerManager, instruments: [Instrument])
 }
 
 class MultipeerManager: NSObject {
@@ -19,7 +23,9 @@ class MultipeerManager: NSObject {
     private let myPeerId: MCPeerID
     private let serviceAdvertiser: MCNearbyServiceAdvertiser
     private let serviceBrowser: MCNearbyServiceBrowser
-    var delegate: MultipeerManagerDelegate?
+    
+    var serverDelegate: MultipeerManagerServerDelegate?
+    var clientDelegate: MultipeerManagerClientDelegate?
     
     override init() {
         
@@ -66,22 +72,35 @@ class MultipeerManager: NSObject {
             }
         }
     }
+    
+    func sendInstruments(instruments: [Instrument]) {
+        let data = NSKeyedArchiver.archivedDataWithRootObject(instruments)
+        if session.connectedPeers.count > 0 {
+            var error : NSError?
+            do {
+                try self.session.sendData(data, toPeers: session.connectedPeers, withMode: MCSessionSendDataMode.Reliable)
+            } catch let error1 as NSError {
+                error = error1
+                NSLog("%@", "\(error)")
+            }
+        }
+    }
 }
 
 extension MultipeerManager: MCSessionDelegate {
     
     func session(session: MCSession, peer peerID: MCPeerID, didChangeState state: MCSessionState) {
-        delegate?.connectedDevicesChanged(self, connectedDevices: session.connectedPeers.map({ $0.displayName }))
+        serverDelegate?.connectedDevicesDidChange(self, connectedDevices: session.connectedPeers.map({ $0.displayName }))
     }
     
     func session(session: MCSession, didReceiveData data: NSData, fromPeer peerID: MCPeerID) {
         NSLog("%@", "didReceiveData: \(data.length) bytes")
         
-        guard let command = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? Command else {
-            return
+        if let command = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? Command {
+            serverDelegate?.commandDidSend(self, command: command)
+        } else if let instruments = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Instrument] {
+            clientDelegate?.instrumentsDidSend(self, instruments: instruments)
         }
-        
-        delegate?.commandDidSend(self, command: command)
     }
     
     func session(session: MCSession, didReceiveStream stream: NSInputStream, withName streamName: String, fromPeer peerID: MCPeerID) {

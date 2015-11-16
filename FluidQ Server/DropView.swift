@@ -67,7 +67,8 @@ class DropView: NSView {
         let URLs = pBoard.readObjectsForClasses([NSURL.self], options: nil) as! [NSURL]
         
         // TODO: catch errors
-        let text = try! String(contentsOfURL: URLs.first!)
+        // Note that Vectorworks uses a dumb non-UTF8 encoding... 😒
+        let text = try! String(contentsOfURL: URLs.first!, encoding: NSMacOSRomanStringEncoding)
         
         self.delegate?.sendRawFile(text)
         

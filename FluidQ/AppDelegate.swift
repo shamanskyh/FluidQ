@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        multipeerManager.clientDelegate = self
+        
         return true
     }
 
@@ -42,7 +45,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate: MultipeerManagerClientDelegate {
+    func instrumentsDidSend(manager: MultipeerManager, instruments: [Instrument]) {
+        let magicSheetViewController = UIViewController()
+        magicSheetViewController.view.backgroundColor = UIColor.blackColor()
+        magicSheetViewController.title = "Magic Sheet"
+        magicSheetViewController.tabBarItem = UITabBarItem(title: "Magic Sheet", image: UIImage(named: "MagicSheet"), tag: 0)
+        
+        if let currentControllers = (self.window?.rootViewController as? UITabBarController)!.viewControllers {
+            dispatch_async(dispatch_get_main_queue()) {
+                let tabBarControllers = currentControllers + [magicSheetViewController]
+                (self.window?.rootViewController as? TabBarController)?.setViewControllers(tabBarControllers, animated: true)
+                (self.window?.rootViewController as? TabBarController)?.selectedViewController = magicSheetViewController
+                
+                // TODO: Init a new view controller class with the instruments. Group instruments by purpose and display magic sheet.
+            }
+        }
+    }
 }
 

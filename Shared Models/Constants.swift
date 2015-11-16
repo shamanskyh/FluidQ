@@ -32,3 +32,15 @@ let k6Keystroke = Keystroke(identifier: "6", keyEquivalent: "6", plaintext: "6")
 let k7Keystroke = Keystroke(identifier: "7", keyEquivalent: "7", plaintext: "7")
 let k8Keystroke = Keystroke(identifier: "8", keyEquivalent: "8", plaintext: "8")
 let k9Keystroke = Keystroke(identifier: "9", keyEquivalent: "9", plaintext: "9")
+
+// MARK: - Units of Measurement for Magic Sheet Creation
+let kMetersInFoot: Double       = 0.3048
+let kMetersInInch: Double       = 0.0254
+let kMetersInYard: Double       = 0.9144
+let kMetersInMile: Double       = 1609.34
+let kMetersInMicron: Double     = 0.000001
+let kMetersInMillimeter: Double = 0.001
+let kMetersInCentimeter: Double = 0.01
+let kMetersInKilometer: Double  = 1000.0
+let kMetersInMeter: Double      = 1.0
+let kMetersInDegrees: Double    = 1.0

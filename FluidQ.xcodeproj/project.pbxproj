@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A004B421BF9A17A0077E34B /* LengthFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B411BF9A17A0077E34B /* LengthFormatter.swift */; };
+		4A004B431BF9A17A0077E34B /* LengthFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B411BF9A17A0077E34B /* LengthFormatter.swift */; };
+		4A004B451BF9A2120077E34B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B441BF9A2120077E34B /* Errors.swift */; };
+		4A004B461BF9A2120077E34B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B441BF9A2120077E34B /* Errors.swift */; };
 		4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C555B1BE864270023A64C /* AppDelegate.swift */; };
 		4A2C55631BE864270023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555D1BE864270023A64C /* Assets.xcassets */; };
 		4A2C55641BE864270023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555E1BE864270023A64C /* Main.storyboard */; };
@@ -36,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A004B411BF9A17A0077E34B /* LengthFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LengthFormatter.swift; path = "Shared Models/LengthFormatter.swift"; sourceTree = "<group>"; };
+		4A004B441BF9A2120077E34B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = "Shared Models/Errors.swift"; sourceTree = "<group>"; };
 		4A2C555B1BE864270023A64C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A2C555D1BE864270023A64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2C555F1BE864270023A64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,7 +177,9 @@
 				4A9C9B0D1BBB64D00098FC5A /* Command.swift */,
 				4A3C55431BC3860E009CBAAE /* Constants.swift */,
 				4A33C1B81BF2682A00AE8566 /* Instrument.swift */,
+				4A004B441BF9A2120077E34B /* Errors.swift */,
 				4A9C9B101BBB65740098FC5A /* Keystroke.swift */,
+				4A004B411BF9A17A0077E34B /* LengthFormatter.swift */,
 				4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */,
 				4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */,
 			);
@@ -289,9 +297,11 @@
 				4A33C1B61BF255D800AE8566 /* DropView.swift in Sources */,
 				4AD017DC1BCE09CD00C9DEC5 /* Utilities.swift in Sources */,
 				4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */,
+				4A004B451BF9A2120077E34B /* Errors.swift in Sources */,
 				4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4A2C55661BE864270023A64C /* ViewController.swift in Sources */,
 				4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */,
+				4A004B421BF9A17A0077E34B /* LengthFormatter.swift in Sources */,
 				4A33C1BC1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,
 				4A33C1B91BF2682A00AE8566 /* Instrument.swift in Sources */,
 				4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */,
@@ -302,11 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A004B431BF9A17A0077E34B /* LengthFormatter.swift in Sources */,
 				4A2C55741BE864470023A64C /* CircleView.swift in Sources */,
 				4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */,
 				4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */,
 				4A2C55781BE864470023A64C /* TabBarController.swift in Sources */,
 				4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */,
+				4A004B461BF9A2120077E34B /* Errors.swift in Sources */,
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
