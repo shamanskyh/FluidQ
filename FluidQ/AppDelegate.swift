@@ -49,8 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: MultipeerManagerClientDelegate {
     func instrumentsDidSend(manager: MultipeerManager, instruments: [Instrument]) {
-        let magicSheetViewController = UIViewController()
-        magicSheetViewController.view.backgroundColor = UIColor.blackColor()
+        
+        // TODO: if there's already a Magic Sheet Controller, just update it
+        
+        let magicSheetViewController = MagicSheetViewController(instruments: instruments)
         magicSheetViewController.title = "Magic Sheet"
         magicSheetViewController.tabBarItem = UITabBarItem(title: "Magic Sheet", image: UIImage(named: "MagicSheet"), tag: 0)
         

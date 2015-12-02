@@ -29,6 +29,7 @@
 		4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */; };
 		4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
+		4A4188281C08F4A800BC890C /* MagicSheetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */; };
 		4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
 		4A8C57E81BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
 		4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B0D1BBB64D00098FC5A /* Command.swift */; };
@@ -37,6 +38,10 @@
 		4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B101BBB65740098FC5A /* Keystroke.swift */; };
 		4AD017DC1BCE09CD00C9DEC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */; };
 		4AD017DD1BCE09CE00C9DEC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */; };
+		4AF2C3D51BFA4107003BF0FC /* MagicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */; };
+		4AF2C3D71BFA422E003BF0FC /* InstrumentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2C3D61BFA422E003BF0FC /* InstrumentGroup.swift */; };
+		4AF2C3DA1BFABEA0003BF0FC /* MagicSheetCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2C3D91BFABEA0003BF0FC /* MagicSheetCircleView.swift */; };
+		4AF2C3DC1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2C3DB1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,7 @@
 		4A33C1B81BF2682A00AE8566 /* Instrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instrument.swift; path = "Shared Models/Instrument.swift"; sourceTree = "<group>"; };
 		4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorGenerator.swift; path = "Shared Models/ColorGenerator.swift"; sourceTree = "<group>"; };
 		4A3C55431BC3860E009CBAAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Shared Models/Constants.swift"; sourceTree = "<group>"; };
+		4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetCollectionViewCell.swift; path = "Magic Sheet/Views/MagicSheetCollectionViewCell.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A45EECC1BE6E7A100DFD658 /* Outgoing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Outgoing.ino; path = Arduino/Outgoing/Outgoing.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerManager.swift; path = "Shared Models/MultipeerManager.swift"; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 		4A9C9B0D1BBB64D00098FC5A /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "Shared Models/Command.swift"; sourceTree = "<group>"; };
 		4A9C9B101BBB65740098FC5A /* Keystroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keystroke.swift; path = "Shared Models/Keystroke.swift"; sourceTree = "<group>"; };
 		4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Shared Models/Utilities.swift"; sourceTree = "<group>"; };
+		4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetViewController.swift; path = "Magic Sheet/MagicSheetViewController.swift"; sourceTree = "<group>"; };
+		4AF2C3D61BFA422E003BF0FC /* InstrumentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstrumentGroup.swift; path = "Magic Sheet/InstrumentGroup.swift"; sourceTree = "<group>"; };
+		4AF2C3D91BFABEA0003BF0FC /* MagicSheetCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetCircleView.swift; path = "Magic Sheet/Views/MagicSheetCircleView.swift"; sourceTree = "<group>"; };
+		4AF2C3DB1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetPurposeGroupView.swift; path = Circles/MagicSheetPurposeGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 				4A2C556A1BE864470023A64C /* Circles */,
 				4A2C556D1BE864470023A64C /* Info.plist */,
 				4A2C556E1BE864470023A64C /* KeypadViewController.swift */,
+				4AF2C3D31BFA40E0003BF0FC /* Magic Sheet */,
 				4A2C556F1BE864470023A64C /* Main.storyboard */,
 				4A2C55701BE864470023A64C /* TabBarController.swift */,
 			);
@@ -186,6 +197,26 @@
 			name = "Shared Models";
 			sourceTree = "<group>";
 		};
+		4AF2C3D31BFA40E0003BF0FC /* Magic Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				4AF2C3D81BFABE77003BF0FC /* Views */,
+				4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */,
+				4AF2C3D61BFA422E003BF0FC /* InstrumentGroup.swift */,
+			);
+			name = "Magic Sheet";
+			sourceTree = "<group>";
+		};
+		4AF2C3D81BFABE77003BF0FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AF2C3D91BFABEA0003BF0FC /* MagicSheetCircleView.swift */,
+				4AF2C3DB1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift */,
+				4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,7 +269,7 @@
 						DevelopmentTeam = B5TXHQBF3Z;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -316,11 +347,16 @@
 				4A2C55741BE864470023A64C /* CircleView.swift in Sources */,
 				4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */,
 				4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */,
+				4A4188281C08F4A800BC890C /* MagicSheetCollectionViewCell.swift in Sources */,
+				4AF2C3D51BFA4107003BF0FC /* MagicSheetViewController.swift in Sources */,
 				4A2C55781BE864470023A64C /* TabBarController.swift in Sources */,
+				4AF2C3D71BFA422E003BF0FC /* InstrumentGroup.swift in Sources */,
 				4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */,
 				4A004B461BF9A2120077E34B /* Errors.swift in Sources */,
+				4AF2C3DA1BFABEA0003BF0FC /* MagicSheetCircleView.swift in Sources */,
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
+				4AF2C3DC1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
 				4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */,
 				4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,
@@ -430,7 +466,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "FluidQ Server/FluidQ Server.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -446,7 +481,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "FluidQ Server/FluidQ Server.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FluidQ Server/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

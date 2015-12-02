@@ -44,3 +44,6 @@ let kMetersInCentimeter: Double = 0.01
 let kMetersInKilometer: Double  = 1000.0
 let kMetersInMeter: Double      = 1.0
 let kMetersInDegrees: Double    = 1.0
+
+// MARK: - Magic Sheet Constants
+let kMagicSheetRowThreshold: Double = 0.5
