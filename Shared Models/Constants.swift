@@ -15,7 +15,7 @@ let kOutKeystroke = Keystroke(identifier: "out", keyEquivalent: "o", plaintext: 
 let kEnterKeystroke = Keystroke(identifier: "enter", keyEquivalent: "\n", plaintext: "•")
 let kThruKeystroke = Keystroke(identifier: "thru", keyEquivalent: "t", plaintext: "Thru")
 let kFullKeystroke = Keystroke(identifier: "full", keyEquivalent: "f", plaintext: "Full")
-let kClearKeystroke = Keystroke(identifier: "clear", keyEquivalent: Character("0x08"), plaintext: "")
+let kClearKeystroke = Keystroke(identifier: "clear", keyEquivalent: Character(UnicodeScalar(8)), plaintext: "")
 
 // MARK: - Cueing
 let kRecordKeystroke = Keystroke(identifier: "record", keyEquivalent: "r", plaintext: "Record")

@@ -11,7 +11,7 @@ import Foundation
 /// Converts a Double to a series of keystrokes that form the number.
 /// - Parameter number: the Double to convert
 /// - Returns: an array of Keystrokes that represent the number as discrete button presses
-func doubleToKeystrokes(number: Double) -> [Keystroke] {
+func doubleToKeystrokes(number: Double, padZeros: Bool) -> [Keystroke] {
     
     var keystrokesToReturn: [Keystroke] = []
     var numberString: String?
@@ -20,7 +20,7 @@ func doubleToKeystrokes(number: Double) -> [Keystroke] {
     numberString = (number % 1 == 0) ? String(Int(number)) : String(format: "%.2f", arguments: [number])
 
     // pad with zeros
-    if Int(number) < 10 {
+    if Int(number) < 10 && padZeros {
         numberString = "0" + numberString!
     }
     

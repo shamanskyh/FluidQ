@@ -36,6 +36,8 @@
 		4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B0D1BBB64D00098FC5A /* Command.swift */; };
 		4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B101BBB65740098FC5A /* Keystroke.swift */; };
 		4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B101BBB65740098FC5A /* Keystroke.swift */; };
+		4ACA1E5D1C0F684500CFE5B6 /* MagicSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA1E5C1C0F684500CFE5B6 /* MagicSheetButton.swift */; };
+		4ACA1E5F1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA1E5E1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift */; };
 		4AD017DC1BCE09CD00C9DEC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */; };
 		4AD017DD1BCE09CE00C9DEC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */; };
 		4AF2C3D51BFA4107003BF0FC /* MagicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */; };
@@ -73,6 +75,8 @@
 		4A9C9AF81BBB63AC0098FC5A /* FluidQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluidQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C9B0D1BBB64D00098FC5A /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "Shared Models/Command.swift"; sourceTree = "<group>"; };
 		4A9C9B101BBB65740098FC5A /* Keystroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keystroke.swift; path = "Shared Models/Keystroke.swift"; sourceTree = "<group>"; };
+		4ACA1E5C1C0F684500CFE5B6 /* MagicSheetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetButton.swift; path = "Static Magic Sheet/MagicSheetButton.swift"; sourceTree = "<group>"; };
+		4ACA1E5E1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticMagicSheetViewController.swift; path = "Static Magic Sheet/StaticMagicSheetViewController.swift"; sourceTree = "<group>"; };
 		4AD017DB1BCE09CB00C9DEC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Shared Models/Utilities.swift"; sourceTree = "<group>"; };
 		4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetViewController.swift; path = "Magic Sheet/MagicSheetViewController.swift"; sourceTree = "<group>"; };
 		4AF2C3D61BFA422E003BF0FC /* InstrumentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstrumentGroup.swift; path = "Magic Sheet/InstrumentGroup.swift"; sourceTree = "<group>"; };
@@ -115,12 +119,13 @@
 		4A2C55671BE864470023A64C /* FluidQ */ = {
 			isa = PBXGroup;
 			children = (
+				4ACA1E5B1C0F67EA00CFE5B6 /* Static Magic Sheet */,
 				4A2C55681BE864470023A64C /* AppDelegate.swift */,
 				4A2C55691BE864470023A64C /* Assets.xcassets */,
 				4A2C556A1BE864470023A64C /* Circles */,
 				4A2C556D1BE864470023A64C /* Info.plist */,
 				4A2C556E1BE864470023A64C /* KeypadViewController.swift */,
-				4AF2C3D31BFA40E0003BF0FC /* Magic Sheet */,
+				4AF2C3D31BFA40E0003BF0FC /* Auto Magic Sheet */,
 				4A2C556F1BE864470023A64C /* Main.storyboard */,
 				4A2C55701BE864470023A64C /* TabBarController.swift */,
 			);
@@ -197,14 +202,23 @@
 			name = "Shared Models";
 			sourceTree = "<group>";
 		};
-		4AF2C3D31BFA40E0003BF0FC /* Magic Sheet */ = {
+		4ACA1E5B1C0F67EA00CFE5B6 /* Static Magic Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				4ACA1E5C1C0F684500CFE5B6 /* MagicSheetButton.swift */,
+				4ACA1E5E1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift */,
+			);
+			name = "Static Magic Sheet";
+			sourceTree = "<group>";
+		};
+		4AF2C3D31BFA40E0003BF0FC /* Auto Magic Sheet */ = {
 			isa = PBXGroup;
 			children = (
 				4AF2C3D81BFABE77003BF0FC /* Views */,
 				4AF2C3D41BFA4107003BF0FC /* MagicSheetViewController.swift */,
 				4AF2C3D61BFA422E003BF0FC /* InstrumentGroup.swift */,
 			);
-			name = "Magic Sheet";
+			name = "Auto Magic Sheet";
 			sourceTree = "<group>";
 		};
 		4AF2C3D81BFABE77003BF0FC /* Views */ = {
@@ -345,6 +359,7 @@
 			files = (
 				4A004B431BF9A17A0077E34B /* LengthFormatter.swift in Sources */,
 				4A2C55741BE864470023A64C /* CircleView.swift in Sources */,
+				4ACA1E5F1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift in Sources */,
 				4A2C55761BE864470023A64C /* KeypadViewController.swift in Sources */,
 				4A2C55731BE864470023A64C /* CirclesViewController.swift in Sources */,
 				4A4188281C08F4A800BC890C /* MagicSheetCollectionViewCell.swift in Sources */,
@@ -354,6 +369,7 @@
 				4A2C55711BE864470023A64C /* AppDelegate.swift in Sources */,
 				4A004B461BF9A2120077E34B /* Errors.swift in Sources */,
 				4AF2C3DA1BFABEA0003BF0FC /* MagicSheetCircleView.swift in Sources */,
+				4ACA1E5D1C0F684500CFE5B6 /* MagicSheetButton.swift in Sources */,
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4AF2C3DC1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift in Sources */,

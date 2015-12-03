@@ -65,9 +65,9 @@ class CirclesViewController: UIViewController {
                 view.previousIntensity = view.intensityLevel
                 
                 if view.groupName == "Warm Front" {
-                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k1Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
+                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k1Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel), padZeros: true) + [kEnterKeystroke]))
                 } else {
-                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k2Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel)) + [kEnterKeystroke]))
+                    (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(Command(withKeystrokes: [k2Keystroke, kAtKeystroke] + doubleToKeystrokes(Double(view.intensityLevel), padZeros: true) + [kEnterKeystroke]))
                 }
             }
             recognizer.scale = 1
