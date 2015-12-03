@@ -106,6 +106,12 @@ class ViewController: NSViewController {
         }
         
         dropView.delegate = self
+        
+        // begin listening for OSC messages from I-CubeX Sensors
+        let oscServer = OSCServer()
+        oscServer.delegate = self
+        oscServer.listen(8888)
+        
     }
 }
 
@@ -120,6 +126,14 @@ extension ViewController: MultipeerManagerServerDelegate {
             self.sendCommandToBoard(command)
         }
         NSLog("%@", command)
+    }
+}
+
+// MARK: OSCServerDelegate Protocol Conformance
+extension ViewController: OSCServerDelegate {
+    func handleMessage(message: OSCMessage!) {
+        // TODO: Build this out
+        print("message received")
     }
 }
 

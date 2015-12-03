@@ -11,6 +11,16 @@
 		4A004B431BF9A17A0077E34B /* LengthFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B411BF9A17A0077E34B /* LengthFormatter.swift */; };
 		4A004B451BF9A2120077E34B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B441BF9A2120077E34B /* Errors.swift */; };
 		4A004B461BF9A2120077E34B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A004B441BF9A2120077E34B /* Errors.swift */; };
+		4A0EC5AC1C10ED3C00D57B30 /* OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5A41C10ED3C00D57B30 /* OSCClient.m */; };
+		4A0EC5AD1C10ED3C00D57B30 /* OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5A71C10ED3C00D57B30 /* OSCMessage.m */; };
+		4A0EC5AF1C10ED3C00D57B30 /* OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5AB1C10ED3C00D57B30 /* OSCServer.m */; };
+		4A0EC5B21C10ED9500D57B30 /* OSCProtocol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5B11C10ED9500D57B30 /* OSCProtocol.mm */; };
+		4A0EC5C01C10EDAF00D57B30 /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5B71C10EDAF00D57B30 /* OscOutboundPacketStream.cpp */; };
+		4A0EC5C11C10EDAF00D57B30 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5BA1C10EDAF00D57B30 /* OscPrintReceivedElements.cpp */; };
+		4A0EC5C21C10EDAF00D57B30 /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5BC1C10EDAF00D57B30 /* OscReceivedElements.cpp */; };
+		4A0EC5C31C10EDAF00D57B30 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5BE1C10EDAF00D57B30 /* OscTypes.cpp */; };
+		4A0EC5C81C10EDF200D57B30 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5C51C10EDF200D57B30 /* GCDAsyncSocket.m */; };
+		4A0EC5C91C10EDF200D57B30 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EC5C71C10EDF200D57B30 /* GCDAsyncUdpSocket.m */; };
 		4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C555B1BE864270023A64C /* AppDelegate.swift */; };
 		4A2C55631BE864270023A64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555D1BE864270023A64C /* Assets.xcassets */; };
 		4A2C55641BE864270023A64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2C555E1BE864270023A64C /* Main.storyboard */; };
@@ -49,6 +59,32 @@
 /* Begin PBXFileReference section */
 		4A004B411BF9A17A0077E34B /* LengthFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LengthFormatter.swift; path = "Shared Models/LengthFormatter.swift"; sourceTree = "<group>"; };
 		4A004B441BF9A2120077E34B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = "Shared Models/Errors.swift"; sourceTree = "<group>"; };
+		4A0EC56B1C10EB0800D57B30 /* FluidQ Server-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FluidQ Server-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A0EC5A31C10ED3C00D57B30 /* OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCClient.h; path = OSCKit/OSCClient.h; sourceTree = "<group>"; };
+		4A0EC5A41C10ED3C00D57B30 /* OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCClient.m; path = OSCKit/OSCClient.m; sourceTree = "<group>"; };
+		4A0EC5A51C10ED3C00D57B30 /* OSCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCKit.h; path = OSCKit/OSCKit.h; sourceTree = "<group>"; };
+		4A0EC5A61C10ED3C00D57B30 /* OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCMessage.h; path = OSCKit/OSCMessage.h; sourceTree = "<group>"; };
+		4A0EC5A71C10ED3C00D57B30 /* OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCMessage.m; path = OSCKit/OSCMessage.m; sourceTree = "<group>"; };
+		4A0EC5AA1C10ED3C00D57B30 /* OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCServer.h; path = OSCKit/OSCServer.h; sourceTree = "<group>"; };
+		4A0EC5AB1C10ED3C00D57B30 /* OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCServer.m; path = OSCKit/OSCServer.m; sourceTree = "<group>"; };
+		4A0EC5B01C10ED9500D57B30 /* OSCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCProtocol.h; path = OSCKit/OSCProtocol.h; sourceTree = "<group>"; };
+		4A0EC5B11C10ED9500D57B30 /* OSCProtocol.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OSCProtocol.mm; path = OSCKit/OSCProtocol.mm; sourceTree = "<group>"; };
+		4A0EC5B41C10EDAF00D57B30 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageMappingOscPacketListener.h; path = OSCKit/oscpack/MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		4A0EC5B51C10EDAF00D57B30 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscException.h; path = OSCKit/oscpack/OscException.h; sourceTree = "<group>"; };
+		4A0EC5B61C10EDAF00D57B30 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscHostEndianness.h; path = OSCKit/oscpack/OscHostEndianness.h; sourceTree = "<group>"; };
+		4A0EC5B71C10EDAF00D57B30 /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OscOutboundPacketStream.cpp; path = OSCKit/oscpack/OscOutboundPacketStream.cpp; sourceTree = "<group>"; };
+		4A0EC5B81C10EDAF00D57B30 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscOutboundPacketStream.h; path = OSCKit/oscpack/OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		4A0EC5B91C10EDAF00D57B30 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscPacketListener.h; path = OSCKit/oscpack/OscPacketListener.h; sourceTree = "<group>"; };
+		4A0EC5BA1C10EDAF00D57B30 /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OscPrintReceivedElements.cpp; path = OSCKit/oscpack/OscPrintReceivedElements.cpp; sourceTree = "<group>"; };
+		4A0EC5BB1C10EDAF00D57B30 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscPrintReceivedElements.h; path = OSCKit/oscpack/OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		4A0EC5BC1C10EDAF00D57B30 /* OscReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OscReceivedElements.cpp; path = OSCKit/oscpack/OscReceivedElements.cpp; sourceTree = "<group>"; };
+		4A0EC5BD1C10EDAF00D57B30 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscReceivedElements.h; path = OSCKit/oscpack/OscReceivedElements.h; sourceTree = "<group>"; };
+		4A0EC5BE1C10EDAF00D57B30 /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OscTypes.cpp; path = OSCKit/oscpack/OscTypes.cpp; sourceTree = "<group>"; };
+		4A0EC5BF1C10EDAF00D57B30 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OscTypes.h; path = OSCKit/oscpack/OscTypes.h; sourceTree = "<group>"; };
+		4A0EC5C41C10EDF200D57B30 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4A0EC5C51C10EDF200D57B30 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4A0EC5C61C10EDF200D57B30 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		4A0EC5C71C10EDF200D57B30 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		4A2C555B1BE864270023A64C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A2C555D1BE864270023A64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2C555F1BE864270023A64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,9 +138,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0EC5A21C10ED1F00D57B30 /* OSCKit */ = {
+			isa = PBXGroup;
+			children = (
+				4A0EC5A31C10ED3C00D57B30 /* OSCClient.h */,
+				4A0EC5A41C10ED3C00D57B30 /* OSCClient.m */,
+				4A0EC5A51C10ED3C00D57B30 /* OSCKit.h */,
+				4A0EC5A61C10ED3C00D57B30 /* OSCMessage.h */,
+				4A0EC5A71C10ED3C00D57B30 /* OSCMessage.m */,
+				4A0EC5B01C10ED9500D57B30 /* OSCProtocol.h */,
+				4A0EC5B11C10ED9500D57B30 /* OSCProtocol.mm */,
+				4A0EC5B31C10ED9C00D57B30 /* oscpack */,
+				4A0EC5AA1C10ED3C00D57B30 /* OSCServer.h */,
+				4A0EC5AB1C10ED3C00D57B30 /* OSCServer.m */,
+			);
+			name = OSCKit;
+			sourceTree = "<group>";
+		};
+		4A0EC5B31C10ED9C00D57B30 /* oscpack */ = {
+			isa = PBXGroup;
+			children = (
+				4A0EC5C41C10EDF200D57B30 /* GCDAsyncSocket.h */,
+				4A0EC5C51C10EDF200D57B30 /* GCDAsyncSocket.m */,
+				4A0EC5C61C10EDF200D57B30 /* GCDAsyncUdpSocket.h */,
+				4A0EC5C71C10EDF200D57B30 /* GCDAsyncUdpSocket.m */,
+				4A0EC5B41C10EDAF00D57B30 /* MessageMappingOscPacketListener.h */,
+				4A0EC5B51C10EDAF00D57B30 /* OscException.h */,
+				4A0EC5B61C10EDAF00D57B30 /* OscHostEndianness.h */,
+				4A0EC5B71C10EDAF00D57B30 /* OscOutboundPacketStream.cpp */,
+				4A0EC5B81C10EDAF00D57B30 /* OscOutboundPacketStream.h */,
+				4A0EC5B91C10EDAF00D57B30 /* OscPacketListener.h */,
+				4A0EC5BA1C10EDAF00D57B30 /* OscPrintReceivedElements.cpp */,
+				4A0EC5BB1C10EDAF00D57B30 /* OscPrintReceivedElements.h */,
+				4A0EC5BC1C10EDAF00D57B30 /* OscReceivedElements.cpp */,
+				4A0EC5BD1C10EDAF00D57B30 /* OscReceivedElements.h */,
+				4A0EC5BE1C10EDAF00D57B30 /* OscTypes.cpp */,
+				4A0EC5BF1C10EDAF00D57B30 /* OscTypes.h */,
+			);
+			name = oscpack;
+			sourceTree = "<group>";
+		};
 		4A2C555A1BE864270023A64C /* FluidQ Server */ = {
 			isa = PBXGroup;
 			children = (
+				4A0EC5A21C10ED1F00D57B30 /* OSCKit */,
+				4A0EC56B1C10EB0800D57B30 /* FluidQ Server-Bridging-Header.h */,
 				4A33C1B71BF2611F00AE8566 /* FluidQ Server.entitlements */,
 				4A2C555B1BE864270023A64C /* AppDelegate.swift */,
 				4A2C555D1BE864270023A64C /* Assets.xcassets */,
@@ -340,16 +418,26 @@
 			files = (
 				4A2C55621BE864270023A64C /* AppDelegate.swift in Sources */,
 				4A33C1B61BF255D800AE8566 /* DropView.swift in Sources */,
+				4A0EC5C21C10EDAF00D57B30 /* OscReceivedElements.cpp in Sources */,
+				4A0EC5AF1C10ED3C00D57B30 /* OSCServer.m in Sources */,
 				4AD017DC1BCE09CD00C9DEC5 /* Utilities.swift in Sources */,
+				4A0EC5AC1C10ED3C00D57B30 /* OSCClient.m in Sources */,
+				4A0EC5C11C10EDAF00D57B30 /* OscPrintReceivedElements.cpp in Sources */,
+				4A0EC5C31C10EDAF00D57B30 /* OscTypes.cpp in Sources */,
 				4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A004B451BF9A2120077E34B /* Errors.swift in Sources */,
 				4A9C9B111BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4A2C55661BE864270023A64C /* ViewController.swift in Sources */,
+				4A0EC5C91C10EDF200D57B30 /* GCDAsyncUdpSocket.m in Sources */,
+				4A0EC5C81C10EDF200D57B30 /* GCDAsyncSocket.m in Sources */,
 				4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */,
 				4A004B421BF9A17A0077E34B /* LengthFormatter.swift in Sources */,
 				4A33C1BC1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,
 				4A33C1B91BF2682A00AE8566 /* Instrument.swift in Sources */,
+				4A0EC5B21C10ED9500D57B30 /* OSCProtocol.mm in Sources */,
 				4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */,
+				4A0EC5AD1C10ED3C00D57B30 /* OSCMessage.m in Sources */,
+				4A0EC5C01C10EDAF00D57B30 /* OscOutboundPacketStream.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +576,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
 				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = "FluidQ Server";
+				SWIFT_OBJC_BRIDGING_HEADER = "FluidQ Server/FluidQ Server-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -503,6 +592,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harryshamansky.FluidQ-Server";
 				PRODUCT_MODULE_NAME = FluidQ;
 				PRODUCT_NAME = "FluidQ Server";
+				SWIFT_OBJC_BRIDGING_HEADER = "FluidQ Server/FluidQ Server-Bridging-Header.h";
 			};
 			name = Release;
 		};
