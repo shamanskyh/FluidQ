@@ -37,6 +37,10 @@
 		4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1B81BF2682A00AE8566 /* Instrument.swift */; };
 		4A33C1BC1BF2699D00AE8566 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */; };
 		4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */; };
+		4A3774D51C12530C00DA630D /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3774D41C12530C00DA630D /* Selection.swift */; };
+		4A3774D61C12530C00DA630D /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3774D41C12530C00DA630D /* Selection.swift */; };
+		4A3774D91C13997900DA630D /* EditorX Presets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3774D81C13997900DA630D /* EditorX Presets.json */; };
+		4A3774DA1C13997900DA630D /* EditorX Presets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3774D81C13997900DA630D /* EditorX Presets.json */; };
 		4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A4188281C08F4A800BC890C /* MagicSheetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */; };
@@ -102,6 +106,8 @@
 		4A33C1B71BF2611F00AE8566 /* FluidQ Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "FluidQ Server.entitlements"; sourceTree = "<group>"; };
 		4A33C1B81BF2682A00AE8566 /* Instrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instrument.swift; path = "Shared Models/Instrument.swift"; sourceTree = "<group>"; };
 		4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorGenerator.swift; path = "Shared Models/ColorGenerator.swift"; sourceTree = "<group>"; };
+		4A3774D41C12530C00DA630D /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Selection.swift; path = "Shared Models/Selection.swift"; sourceTree = "<group>"; };
+		4A3774D81C13997900DA630D /* EditorX Presets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "EditorX Presets.json"; path = "../I-CubeX Editor/EditorX Presets.json"; sourceTree = "<group>"; };
 		4A3C55431BC3860E009CBAAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Shared Models/Constants.swift"; sourceTree = "<group>"; };
 		4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetCollectionViewCell.swift; path = "Magic Sheet/Views/MagicSheetCollectionViewCell.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -219,6 +225,15 @@
 			path = Circles;
 			sourceTree = "<group>";
 		};
+		4A3774D71C13995D00DA630D /* I-CubeX Editor */ = {
+			isa = PBXGroup;
+			children = (
+				4A3774D81C13997900DA630D /* EditorX Presets.json */,
+			);
+			name = "I-CubeX Editor";
+			path = FluidQ;
+			sourceTree = "<group>";
+		};
 		4A45EEC81BE6E57400DFD658 /* Arduino */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +266,7 @@
 				4A2C555A1BE864270023A64C /* FluidQ Server */,
 				4A2C55671BE864470023A64C /* FluidQ */,
 				4A45EEC81BE6E57400DFD658 /* Arduino */,
+				4A3774D71C13995D00DA630D /* I-CubeX Editor */,
 				4A9C9ACC1BBB5E710098FC5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -269,6 +285,7 @@
 			children = (
 				4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */,
 				4A9C9B0D1BBB64D00098FC5A /* Command.swift */,
+				4A3774D41C12530C00DA630D /* Selection.swift */,
 				4A3C55431BC3860E009CBAAE /* Constants.swift */,
 				4A33C1B81BF2682A00AE8566 /* Instrument.swift */,
 				4A004B441BF9A2120077E34B /* Errors.swift */,
@@ -396,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2C55631BE864270023A64C /* Assets.xcassets in Resources */,
+				4A3774D91C13997900DA630D /* EditorX Presets.json in Resources */,
 				4A2C55641BE864270023A64C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2C55771BE864470023A64C /* Main.storyboard in Resources */,
+				4A3774DA1C13997900DA630D /* EditorX Presets.json in Resources */,
 				4A2C55721BE864470023A64C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +456,7 @@
 				4A0EC5B21C10ED9500D57B30 /* OSCProtocol.mm in Sources */,
 				4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */,
 				4A0EC5AD1C10ED3C00D57B30 /* OSCMessage.m in Sources */,
+				4A3774D51C12530C00DA630D /* Selection.swift in Sources */,
 				4A0EC5C01C10EDAF00D57B30 /* OscOutboundPacketStream.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +481,7 @@
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4AF2C3DC1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift in Sources */,
+				4A3774D61C12530C00DA630D /* Selection.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
 				4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */,
 				4A33C1BD1BF2699D00AE8566 /* ColorGenerator.swift in Sources */,

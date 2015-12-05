@@ -146,6 +146,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="244"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="09q-vE-4eC" customClass="DropView" customModule="FluidQ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="244"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qxZ-Cj-brZ">
+                                        <rect key="frame" x="130" y="59" width="221" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="217" id="V3C-rg-Pjd"/>
+                                            <constraint firstAttribute="height" constant="57" id="ny4-cJ-w6z"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Send Magic Sheet to Device(s)" id="SbA-vk-YGd">
+                                            <font key="font" metaFont="systemBold" size="18"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-UO-xMw">
+                                        <rect key="frame" x="210" y="124" width="61" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="UTW-zw-9Hq"/>
+                                            <constraint firstAttribute="width" constant="61" id="ZoZ-fS-bvO"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Arrow" id="YRl-mH-xQi"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dtW-UO-xMw" firstAttribute="top" secondItem="09q-vE-4eC" secondAttribute="top" constant="72" id="CUa-rg-Q0W"/>
+                                    <constraint firstItem="qxZ-Cj-brZ" firstAttribute="centerX" secondItem="09q-vE-4eC" secondAttribute="centerX" id="Mqy-Br-UMH"/>
+                                    <constraint firstItem="qxZ-Cj-brZ" firstAttribute="top" secondItem="dtW-UO-xMw" secondAttribute="bottom" constant="8" id="oEk-xb-qy5"/>
+                                    <constraint firstItem="dtW-UO-xMw" firstAttribute="centerX" secondItem="09q-vE-4eC" secondAttribute="centerX" id="vwQ-W0-Prd"/>
+                                </constraints>
+                            </customView>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="28" horizontalPageScroll="10" verticalLineScroll="28" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhR-dk-efp">
                                 <rect key="frame" x="0.0" y="20" width="480" height="224"/>
                                 <clipView key="contentView" id="GMr-bn-Zaj">
@@ -216,9 +247,10 @@
                                 </scroller>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-hz-wIQ">
-                                <rect key="frame" x="3" y="0.0" width="474" height="17"/>
+                                <rect key="frame" x="240" y="0.0" width="235" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="FlE-Gi-ZER"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="NXl-Yf-a4J"/>
+                                    <constraint firstAttribute="height" constant="17" id="srW-If-TyL"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="📱 Disconnected      ⌨️ Disconnected" id="TlF-Q9-aZd">
                                     <font key="font" metaFont="smallSystem"/>
@@ -226,55 +258,40 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="09q-vE-4eC" customClass="DropView" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="244"/>
-                                <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qxZ-Cj-brZ">
-                                        <rect key="frame" x="130" y="59" width="221" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="217" id="V3C-rg-Pjd"/>
-                                            <constraint firstAttribute="height" constant="57" id="ny4-cJ-w6z"/>
-                                        </constraints>
-                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Send Magic Sheet to Device(s)" id="SbA-vk-YGd">
-                                            <font key="font" metaFont="systemBold" size="18"/>
-                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-UO-xMw">
-                                        <rect key="frame" x="210" y="124" width="61" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="UTW-zw-9Hq"/>
-                                            <constraint firstAttribute="width" constant="61" id="ZoZ-fS-bvO"/>
-                                        </constraints>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Arrow" id="YRl-mH-xQi"/>
-                                    </imageView>
-                                </subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-aG-8xA">
+                                <rect key="frame" x="5" y="0.0" width="235" height="17"/>
                                 <constraints>
-                                    <constraint firstItem="dtW-UO-xMw" firstAttribute="top" secondItem="09q-vE-4eC" secondAttribute="top" constant="72" id="CUa-rg-Q0W"/>
-                                    <constraint firstItem="qxZ-Cj-brZ" firstAttribute="centerX" secondItem="09q-vE-4eC" secondAttribute="centerX" id="Mqy-Br-UMH"/>
-                                    <constraint firstItem="qxZ-Cj-brZ" firstAttribute="top" secondItem="dtW-UO-xMw" secondAttribute="bottom" constant="8" id="oEk-xb-qy5"/>
-                                    <constraint firstItem="dtW-UO-xMw" firstAttribute="centerX" secondItem="09q-vE-4eC" secondAttribute="centerX" id="vwQ-W0-Prd"/>
+                                    <constraint firstAttribute="height" constant="17" id="lEN-KF-OIs"/>
                                 </constraints>
-                            </customView>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="djH-Vc-K63">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="09q-vE-4eC" secondAttribute="bottom" id="6kF-y2-ioa"/>
+                            <constraint firstAttribute="bottom" secondItem="BCJ-hz-wIQ" secondAttribute="bottom" id="Aw2-Iy-DjW"/>
                             <constraint firstItem="PhR-dk-efp" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="GIK-Mw-YBg"/>
-                            <constraint firstAttribute="trailing" secondItem="BCJ-hz-wIQ" secondAttribute="trailing" constant="5" id="Z5x-O8-4wt"/>
+                            <constraint firstItem="GFc-aG-8xA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="7" id="T2F-XP-4i1"/>
+                            <constraint firstAttribute="trailing" secondItem="BCJ-hz-wIQ" secondAttribute="trailing" constant="7" id="WCC-1T-OpN"/>
                             <constraint firstAttribute="trailing" secondItem="09q-vE-4eC" secondAttribute="trailing" id="aKf-4v-WiP"/>
                             <constraint firstAttribute="trailing" secondItem="PhR-dk-efp" secondAttribute="trailing" id="bTb-Xz-EOU"/>
                             <constraint firstItem="09q-vE-4eC" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ekJ-TZ-arR"/>
-                            <constraint firstItem="BCJ-hz-wIQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="fQ4-Pm-Rji"/>
                             <constraint firstItem="PhR-dk-efp" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="gST-QU-my0"/>
+                            <constraint firstAttribute="trailing" secondItem="BCJ-hz-wIQ" secondAttribute="trailing" constant="7" id="hhz-oA-Jjo"/>
                             <constraint firstAttribute="bottom" secondItem="PhR-dk-efp" secondAttribute="bottom" constant="20" id="iA2-cW-CMU"/>
                             <constraint firstItem="09q-vE-4eC" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="nlb-K0-RRl"/>
-                            <constraint firstAttribute="bottom" secondItem="BCJ-hz-wIQ" secondAttribute="bottom" id="rUR-xO-oZC"/>
+                            <constraint firstItem="BCJ-hz-wIQ" firstAttribute="width" secondItem="GFc-aG-8xA" secondAttribute="width" id="pNA-fz-ZeM"/>
+                            <constraint firstItem="BCJ-hz-wIQ" firstAttribute="leading" secondItem="GFc-aG-8xA" secondAttribute="trailing" constant="4" id="tBa-P1-iAl"/>
+                            <constraint firstAttribute="bottom" secondItem="GFc-aG-8xA" secondAttribute="bottom" id="xK0-V2-sAi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dropView" destination="09q-vE-4eC" id="vZv-KR-Gzp"/>
                         <outlet property="scrollView" destination="PhR-dk-efp" id="x7e-Id-9we"/>
+                        <outlet property="selectionLabel" destination="GFc-aG-8xA" id="szD-Rm-sBj"/>
                         <outlet property="statusLabel" destination="BCJ-hz-wIQ" id="U9M-aE-0W7"/>
                         <outlet property="tableView" destination="AA7-hE-fe0" id="JsX-4k-Gx8"/>
                     </connections>

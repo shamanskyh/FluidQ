@@ -11,7 +11,7 @@ import Foundation
 /// Converts a Double to a series of keystrokes that form the number.
 /// - Parameter number: the Double to convert
 /// - Returns: an array of Keystrokes that represent the number as discrete button presses
-func doubleToKeystrokes(number: Double, padZeros: Bool) -> [Keystroke] {
+func doubleToKeystrokes(number: Double, padZeros: Bool = false, suppressPlaintext: Bool = false) -> [Keystroke] {
     
     var keystrokesToReturn: [Keystroke] = []
     var numberString: String?
@@ -30,10 +30,40 @@ func doubleToKeystrokes(number: Double, padZeros: Bool) -> [Keystroke] {
     }
     
     for char in finalString.characters {
-        keystrokesToReturn.append(Keystroke(identifier: "\(char)", keyEquivalent: char, plaintext: "\(char)"))
+        keystrokesToReturn.append(Keystroke(identifier: "\(char)", keyEquivalent: char, plaintext: suppressPlaintext ? "" : "\(char)"))
     }
     
     return keystrokesToReturn
+}
+
+/// Generates a selection command from a group of selected channels
+func generateCommand(selectedChannels: [(Int, Int)]) -> Command {
+    
+    if selectedChannels.count == 0 {
+        // TODO: swap the single clear command out for a shift+clear
+        return Command(withKeystrokes: [kVisibleClearKeystroke])
+    }
+    
+    // TODO: swap the single clear command out for a shift+clear
+    var keystrokes: [Keystroke] = [kClearKeystroke]
+    for (channel1, channel2) in selectedChannels {
+        if channel1 == channel2 {
+            let newKeystrokes = doubleToKeystrokes(Double(channel1), padZeros: false)
+            keystrokes += (newKeystrokes + [kAndKeystroke])
+        } else {
+            let startKeystrokes = doubleToKeystrokes(Double(channel1), padZeros: false)
+            let endKeystrokes = doubleToKeystrokes(Double(channel2), padZeros: false)
+            keystrokes += (startKeystrokes + [kThruKeystroke] + endKeystrokes + [kAndKeystroke])
+        }
+    }
+    
+    // drop the trailing AND
+    keystrokes.removeLast()
+    
+    // enter the command
+    keystrokes.append(kEnterKeystroke)
+    
+    return Command(withKeystrokes: keystrokes)
 }
 
 // MARK: String/Key Conversion Utilities

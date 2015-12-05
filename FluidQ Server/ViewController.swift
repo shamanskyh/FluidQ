@@ -20,13 +20,24 @@ class ViewController: NSViewController {
     /// connection status label
     @IBOutlet weak var statusLabel: NSTextField!
     
+    /// selection label
+    @IBOutlet weak var selectionLabel: NSTextField!
+    
     /// the drop target
     @IBOutlet weak var dropView: DropView!
     
     /// an ordered list of all commands sent
     private var previousCommands: [Command] = []
     
+    /// the selected channels
+    private var selectedChannels: [Int] = []
+    
+    /// channels capable of color changing
+    // TODO: Generate this based on gelColor property in IB
+    private var colorChangingChannels: [Int] = [11, 12, 13]
+    
     let multipeerManager = MultipeerManager()
+    let oscServer = OSCServer()
     
     /// a file descriptor to write to the serial port
     var serialFileDescriptor: CInt? {
@@ -58,16 +69,38 @@ class ViewController: NSViewController {
     /// - Parameter command: the command to send
     internal func sendCommandToBoard(command: Command) {
         
+        // check for missing selection
+        var filteredCommand: Command?
+        if command.requiresSelection && selectedChannels.count == 0 {
+            filteredCommand = Command(withKeystrokes: [Keystroke(identifier: "missingSelection", keyEquivalent: " ", plaintext: "Select channel(s) on magic sheet first")])
+        } else if command.requiresColorChangingChannelSelection {
+            var channelMismatch = false
+            for channel in selectedChannels {
+                if !colorChangingChannels.contains(channel) {
+                    channelMismatch = true
+                    break
+                }
+            }
+            
+            if channelMismatch {
+                filteredCommand = Command(withKeystrokes: [Keystroke(identifier: "missingSelection", keyEquivalent: " ", plaintext: "Select color changing channel(s) on magic sheet first")])
+            } else {
+                filteredCommand = command
+            }
+        } else {
+            filteredCommand = command
+        }
+        
         // actually send the command to the serial port
         // TODO: Handle modifier keys
         // TODO: Higher baud rate?
-        if let serial = serialFileDescriptor {
-            let stringToSend = String(command.keystrokes.map({ $0.keyEquivalent }))
+        if let serial = serialFileDescriptor where (filteredCommand?.keystrokes.first?.identifier != "missingSelection") {
+            let stringToSend = String(filteredCommand!.keystrokes.map({ $0.keyEquivalent }))
             write(serial, stringToSend, stringToSend.characters.count)
         }
         
         // append onto the array
-        previousCommands.append(command)
+        previousCommands.append(filteredCommand!)
         
         // only remember the last 50 commands
         if previousCommands.count > 50 {
@@ -108,9 +141,8 @@ class ViewController: NSViewController {
         dropView.delegate = self
         
         // begin listening for OSC messages from I-CubeX Sensors
-        let oscServer = OSCServer()
         oscServer.delegate = self
-        oscServer.listen(8888)
+        oscServer.listen(7000)
         
     }
 }
@@ -122,23 +154,80 @@ extension ViewController: MultipeerManagerServerDelegate {
     }
     
     func commandDidSend(manager: MultipeerManager, command: Command) {
+        // run this on the main queue since it updates the UI
         NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
             self.sendCommandToBoard(command)
         }
         NSLog("%@", command)
+    }
+    
+    func selectionDidSend(manager: MultipeerManager, selection: Selection) {
+        selectedChannels = selection.selectedChannels.sort()
+        
+        // optimize single channels into contiguous ranges
+        var tuples: [(Int, Int)] = []
+        if selectedChannels.count > 0 {
+            var lastChannel = selectedChannels.first!
+            var currentTuple = (selectedChannels.first!, selectedChannels.first!)
+            for channel in selectedChannels {
+                if channel == lastChannel || (channel == lastChannel + 1) {
+                    currentTuple = (currentTuple.0, channel)
+                } else {
+                    tuples.append(currentTuple)
+                    currentTuple = (channel, channel)
+                }
+                lastChannel = channel
+            }
+            tuples.append(currentTuple)
+        }
+        
+        let command = generateCommand(tuples)
+        
+        // update the selection label
+        if tuples.count > 0 {
+            selectionLabel.stringValue = command.description.stringByReplacingOccurrencesOfString(" Thru " , withString: "-").stringByReplacingOccurrencesOfString(" + ", withString: ", ").stringByReplacingOccurrencesOfString("•", withString: "")
+        } else {
+            selectionLabel.stringValue = ""
+        }
+        
+        // run this on the main queue since it updates the UI
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+            self.sendCommandToBoard(command)
+        }
     }
 }
 
 // MARK: OSCServerDelegate Protocol Conformance
 extension ViewController: OSCServerDelegate {
     func handleMessage(message: OSCMessage!) {
-        // TODO: Build this out
-        print("message received")
+        
+        let value = message.arguments.first! as! Int
+        
+        // assume intensity first
+        if message.address == "/input1" {
+            let convertedValue = Int((Double(value) / 127) * 100)
+            let keystrokes = [kAtKeystroke] + doubleToKeystrokes(Double(convertedValue), padZeros: true) + [kEnterKeystroke]
+            let command = Command(withKeystrokes: keystrokes)
+            command.requiresSelection = true
+            sendCommandToBoard(command)
+        } else if message.address == "/input2" {
+            let convertedValue = Int((Double(value) / 127) * 360)
+            let saturationKeystrokes = kSaturationKeystrokes + [kAtKeystroke, kFullKeystroke]
+            let hueKeystrokes = kHueKeystrokes + [kAtKeystroke] + doubleToKeystrokes(Double(convertedValue), padZeros: true)
+            let fullKeystrokes = saturationKeystrokes + hueKeystrokes + [kEnterKeystroke]
+            let command = Command(withKeystrokes: fullKeystrokes)
+            command.requiresSelection = true
+            command.requiresColorChangingChannelSelection = true
+            sendCommandToBoard(command)
+        }
+        
+        
+        // then try color
     }
 }
 
 // MARK: - TableView DataSource and Delegate
-// Note that I tried to use cocoa bindings, but they couldn't keep up with the fast-paced
+// I tried to use cocoa bindings, but they couldn't keep up with the fast-paced
 // insertions and deletions for some reason...
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     

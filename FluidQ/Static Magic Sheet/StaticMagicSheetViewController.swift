@@ -34,28 +34,8 @@ class StaticMagicSheetViewController: UIViewController {
         return returnArray
     }
     
-    // MARK: Command Generation
-    func generateCommand(selectedChannels: [Int]) -> Command {
-        
-        // TODO: swap the single clear command out for a shift+clear
-        var keystrokes: [Keystroke] = [kClearKeystroke]
-        for channel in selectedChannels {
-            let newKeystrokes = doubleToKeystrokes(Double(channel), padZeros: false)
-            keystrokes += newKeystrokes
-            keystrokes.append(kAndKeystroke)
-        }
-        
-        // drop the trailing AND
-        keystrokes.removeLast()
-        
-        // enter the command
-        keystrokes.append(kEnterKeystroke)
-        
-        return Command(withKeystrokes: keystrokes)
-    }
-    
-    func sendCommand(command: Command) {
-        (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendCommand(command)
+    func sendSelection(selection: Selection) {
+        (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendSelection(selection)
     }
     
     // MARK: View Lifecycle
@@ -68,9 +48,8 @@ class StaticMagicSheetViewController: UIViewController {
     @IBAction func toggleButton(sender: UIButton) {
         sender.selected = !sender.selected
         
-        if selectedChannels().count > 0 {
-            sendCommand(generateCommand(selectedChannels()))
-        }
+        let selection = Selection(withSelectedChannels: selectedChannels())
+        sendSelection(selection)
     }
     
     // MARK: Rectangular Selection
@@ -151,10 +130,10 @@ class StaticMagicSheetViewController: UIViewController {
             for button in buttons {
                 button.selected = false
             }
-        } else if selectedChannels().count > 0 {
-            sendCommand(generateCommand(selectedChannels()))
         }
         
+        let selection = Selection(withSelectedChannels: selectedChannels())
+        sendSelection(selection)
         
         for button in buttons {
             button.didToggle = false

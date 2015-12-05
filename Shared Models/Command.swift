@@ -18,17 +18,18 @@ internal class Command: NSObject, NSCoding {
         super.init()
     }
     
+    /// Initializes a command with an array of Keystrokes
     convenience init(withKeystrokes keystrokes: [Keystroke]) {
         self.init()
         self.keystrokes = keystrokes
     }
     
-    /// generates a description for printing
+    /// Generates a description for printing
     override var description: String {
         var runningString = ""
         var previousKeystroke = ""
         for keystroke in keystrokes {
-            if let plaintext = keystroke.plaintext {
+            if let plaintext = keystroke.plaintext where plaintext.characters.count > 0 {
                 
                 // drop the previous space if we have two numbers in a row
                 if Int(plaintext) != nil && Int(previousKeystroke) != nil {
@@ -43,6 +44,10 @@ internal class Command: NSObject, NSCoding {
         // drop the trailing space
         return String(runningString.characters.dropLast())
     }
+    
+    /// Some commands must be associated with selected channel(s).
+    var requiresSelection = false
+    var requiresColorChangingChannelSelection = false
     
     // MARK: - NSCoding Protocol Conformance
     required init(coder aDecoder: NSCoder) {

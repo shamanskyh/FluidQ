@@ -12,6 +12,7 @@ import MultipeerConnectivity
 protocol MultipeerManagerServerDelegate {
     func connectedDevicesDidChange(manager: MultipeerManager, connectedDevices: [String])
     func commandDidSend(manager: MultipeerManager, command: Command)
+    func selectionDidSend(manager: MultipeerManager, selection: Selection)
 }
 
 protocol MultipeerManagerClientDelegate {
@@ -73,6 +74,19 @@ class MultipeerManager: NSObject {
         }
     }
     
+    func sendSelection(selection: Selection) {
+        let data = NSKeyedArchiver.archivedDataWithRootObject(selection)
+        if session.connectedPeers.count > 0 {
+            var error : NSError?
+            do {
+                try self.session.sendData(data, toPeers: session.connectedPeers, withMode: MCSessionSendDataMode.Reliable)
+            } catch let error1 as NSError {
+                error = error1
+                NSLog("%@", "\(error)")
+            }
+        }
+    }
+    
     func sendInstruments(instruments: [Instrument]) {
         let data = NSKeyedArchiver.archivedDataWithRootObject(instruments)
         if session.connectedPeers.count > 0 {
@@ -98,6 +112,8 @@ extension MultipeerManager: MCSessionDelegate {
         
         if let command = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? Command {
             serverDelegate?.commandDidSend(self, command: command)
+        } else if let selection = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? Selection {
+            serverDelegate?.selectionDidSend(self, selection: selection)
         } else if let instruments = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Instrument] {
             clientDelegate?.instrumentsDidSend(self, instruments: instruments)
         }
