@@ -11,6 +11,7 @@ import Foundation
 class Selection: NSObject, NSCoding {
     
     var selectedChannels: [Int] = []
+    var isColorChangingCapable = false
     
     override init() {
         super.init()
@@ -25,10 +26,12 @@ class Selection: NSObject, NSCoding {
     // MARK: - NSCoding Protocol Conformance
     required init(coder aDecoder: NSCoder) {
         selectedChannels = aDecoder.decodeObjectForKey("selectedChannels") as! [Int]
+        isColorChangingCapable = aDecoder.decodeBoolForKey("isColorChangingCapable")
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(selectedChannels, forKey: "selectedChannels")
+        aCoder.encodeBool(isColorChangingCapable, forKey: "isColorChangingCapable")
     }
     
 }

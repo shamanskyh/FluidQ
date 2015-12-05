@@ -20,10 +20,15 @@ class StaticMagicSheetViewController: UIViewController {
     // IBOutletCollection of buttons. Make sure all buttons are added to this!
     @IBOutlet var buttons: [MagicSheetButton]!
     
+    /// calculated property that returns the color changing channels
+    /// - Complexity: O(N)
+    var colorChangingChannels: [Int] {
+        return buttons.filter({ $0.isColorChanging }).map({ Int($0.titleLabel!.text!)! })
+    }
+    
     // MARK: Utility Functions
     func selectedChannels() -> [Int] {
         var returnArray: [Int] = []
-        // Note that channel circles must be top-level objects in the view hierarchy
         for button in buttons {
             if button.selected {
                 if let intRep = Int((button.titleLabel?.text)!) {
@@ -35,6 +40,16 @@ class StaticMagicSheetViewController: UIViewController {
     }
     
     func sendSelection(selection: Selection) {
+        
+        var isColorChanging = true
+        for channel in selection.selectedChannels {
+            if !colorChangingChannels.contains(channel) {
+                isColorChanging = false
+                break
+            }
+        }
+        selection.isColorChangingCapable = isColorChanging
+        
         (UIApplication.sharedApplication().delegate as! AppDelegate).multipeerManager.sendSelection(selection)
     }
     

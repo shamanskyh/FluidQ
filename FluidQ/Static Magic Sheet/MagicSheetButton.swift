@@ -17,10 +17,20 @@ class MagicSheetButton: UIButton {
     var gelColor: String!
     var color: UIColor {
         if let str = valueForKeyPath("gelColor") as? String {
+            if str.uppercaseString == "RGB" || str.uppercaseString == "LED" || str.lowercaseString == "seachanger" {
+                return UIColor(red: 1.0, green: (65.0 / 255.0), blue: 0.0, alpha: 1.0)
+            }
             return UIColor(CGColor: str.toGelColor()!)
         } else {
             return UIColor(red: 1.0, green: (65.0 / 255.0), blue: 0.0, alpha: 1.0)
         }
+    }
+    
+    var isColorChanging: Bool {
+        if let str = valueForKeyPath("gelColor") as? String {
+            return (str.uppercaseString == "RGB" || str.uppercaseString == "LED" || str.lowercaseString == "seachanger")
+        }
+        return false
     }
     
     // MARK: Drawing

@@ -31,10 +31,7 @@ class ViewController: NSViewController {
     
     /// the selected channels
     private var selectedChannels: [Int] = []
-    
-    /// channels capable of color changing
-    // TODO: Generate this based on gelColor property in IB
-    private var colorChangingChannels: [Int] = [11, 12, 13]
+    private var colorChangingSelection = false
     
     let multipeerManager = MultipeerManager()
     let oscServer = OSCServer()
@@ -73,20 +70,8 @@ class ViewController: NSViewController {
         var filteredCommand: Command?
         if command.requiresSelection && selectedChannels.count == 0 {
             filteredCommand = Command(withKeystrokes: [Keystroke(identifier: "missingSelection", keyEquivalent: " ", plaintext: "Select channel(s) on magic sheet first")])
-        } else if command.requiresColorChangingChannelSelection {
-            var channelMismatch = false
-            for channel in selectedChannels {
-                if !colorChangingChannels.contains(channel) {
-                    channelMismatch = true
-                    break
-                }
-            }
-            
-            if channelMismatch {
-                filteredCommand = Command(withKeystrokes: [Keystroke(identifier: "missingSelection", keyEquivalent: " ", plaintext: "Select color changing channel(s) on magic sheet first")])
-            } else {
-                filteredCommand = command
-            }
+        } else if command.requiresColorChangingChannelSelection && !colorChangingSelection {
+            filteredCommand = Command(withKeystrokes: [Keystroke(identifier: "missingSelection", keyEquivalent: " ", plaintext: "Select color changing channel(s) on magic sheet first")])
         } else {
             filteredCommand = command
         }
@@ -163,6 +148,7 @@ extension ViewController: MultipeerManagerServerDelegate {
     
     func selectionDidSend(manager: MultipeerManager, selection: Selection) {
         selectedChannels = selection.selectedChannels.sort()
+        colorChangingSelection = selection.isColorChangingCapable
         
         // optimize single channels into contiguous ranges
         var tuples: [(Int, Int)] = []
@@ -210,7 +196,7 @@ extension ViewController: OSCServerDelegate {
             let command = Command(withKeystrokes: keystrokes)
             command.requiresSelection = true
             sendCommandToBoard(command)
-        } else if message.address == "/input2" {
+        } else if message.address == "/input2" {    // then try color
             let convertedValue = Int((Double(value) / 127) * 360)
             let saturationKeystrokes = kSaturationKeystrokes + [kAtKeystroke, kFullKeystroke]
             let hueKeystrokes = kHueKeystrokes + [kAtKeystroke] + doubleToKeystrokes(Double(convertedValue), padZeros: true)
@@ -220,9 +206,6 @@ extension ViewController: OSCServerDelegate {
             command.requiresColorChangingChannelSelection = true
             sendCommandToBoard(command)
         }
-        
-        
-        // then try color
     }
 }
 

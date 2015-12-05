@@ -108,6 +108,36 @@
                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="yH8-nq-Npu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-5W-hC7" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                <rect key="frame" x="20" y="293" width="61" height="61"/>
+                                <state key="normal" title="31"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="HvH-n3-7AC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geh-MO-Rad" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                <rect key="frame" x="89" y="293" width="61" height="61"/>
+                                <state key="normal" title="32"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="JrA-db-JbX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exl-p4-Cp4" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                <rect key="frame" x="158" y="293" width="61" height="61"/>
+                                <state key="normal" title="33"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="hqT-lK-sRa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -121,6 +151,9 @@
                         <outletCollection property="buttons" destination="VOI-Iu-Gsk" collectionClass="NSMutableArray" id="O4C-Sq-LRs"/>
                         <outletCollection property="buttons" destination="Z9k-ld-BZa" collectionClass="NSMutableArray" id="3cU-cb-Vey"/>
                         <outletCollection property="buttons" destination="TYW-YI-CSk" collectionClass="NSMutableArray" id="pCl-eg-iao"/>
+                        <outletCollection property="buttons" destination="Rya-5W-hC7" collectionClass="NSMutableArray" id="yTN-ca-2Qr"/>
+                        <outletCollection property="buttons" destination="exl-p4-Cp4" collectionClass="NSMutableArray" id="XsZ-3i-0dm"/>
+                        <outletCollection property="buttons" destination="geh-MO-Rad" collectionClass="NSMutableArray" id="HGg-9w-HYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF8-ku-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
