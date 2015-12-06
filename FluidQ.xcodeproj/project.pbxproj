@@ -108,6 +108,7 @@
 		4A33C1BB1BF2699D00AE8566 /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorGenerator.swift; path = "Shared Models/ColorGenerator.swift"; sourceTree = "<group>"; };
 		4A3774D41C12530C00DA630D /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Selection.swift; path = "Shared Models/Selection.swift"; sourceTree = "<group>"; };
 		4A3774D81C13997900DA630D /* EditorX Presets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "EditorX Presets.json"; path = "../I-CubeX Editor/EditorX Presets.json"; sourceTree = "<group>"; };
+		4A3774DC1C14991500DA630D /* FluidQ Macros 2015-12-06 11-25-07.esf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FluidQ Macros 2015-12-06 11-25-07.esf"; sourceTree = "<group>"; };
 		4A3C55431BC3860E009CBAAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Shared Models/Constants.swift"; sourceTree = "<group>"; };
 		4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetCollectionViewCell.swift; path = "Magic Sheet/Views/MagicSheetCollectionViewCell.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -234,6 +235,15 @@
 			path = FluidQ;
 			sourceTree = "<group>";
 		};
+		4A3774DB1C1498FD00DA630D /* ETC Showfiles */ = {
+			isa = PBXGroup;
+			children = (
+				4A3774DC1C14991500DA630D /* FluidQ Macros 2015-12-06 11-25-07.esf */,
+			);
+			name = "ETC Showfiles";
+			path = FluidQ;
+			sourceTree = "<group>";
+		};
 		4A45EEC81BE6E57400DFD658 /* Arduino */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +277,7 @@
 				4A2C55671BE864470023A64C /* FluidQ */,
 				4A45EEC81BE6E57400DFD658 /* Arduino */,
 				4A3774D71C13995D00DA630D /* I-CubeX Editor */,
+				4A3774DB1C1498FD00DA630D /* ETC Showfiles */,
 				4A9C9ACC1BBB5E710098FC5A /* Products */,
 			);
 			sourceTree = "<group>";
