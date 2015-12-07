@@ -51,4 +51,13 @@ class MagicSheetButton: UIButton {
         }
     }
     
+    // MARK: - Intrinsic Content Size
+    override func intrinsicContentSize() -> CGSize {
+        if self.traitCollection.horizontalSizeClass == .Compact {
+            return CGSize(width: 34, height: 34)
+        } else {
+            return CGSize(width: 80, height: 80)
+        }
+    }
+    
 }

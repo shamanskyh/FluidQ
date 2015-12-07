@@ -116,7 +116,10 @@ class StaticMagicSheetViewController: UIViewController {
         
         // selection
         for button in buttons {
-            if rect.frame.contains(CGPoint(x: button.frame.midX, y: button.frame.midY)) {
+            
+            let buttonRectInMainView = view.convertRect(button.bounds, fromView: button)
+            
+            if rect.frame.contains(CGPoint(x: buttonRectInMainView.midX, y: buttonRectInMainView.midY)) {
                 if additiveSelection && !button.didToggle {
                     button.selected = !button.selected
                     button.didToggle = true
@@ -156,5 +159,11 @@ class StaticMagicSheetViewController: UIViewController {
         selectionRectangleView?.removeFromSuperview()
     }
     
+    // MARK: - Rotation
+    override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animateAlongsideTransition({ (context: UIViewControllerTransitionCoordinatorContext) -> Void in
+            self.buttons.forEach({ $0.invalidateIntrinsicContentSize(); $0.setNeedsDisplay() })
+        }, completion: nil)
+    }
     
 }

@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="268" y="349"/>
         </scene>
-        <!--Magic Sheet-->
+        <!--Crescent Rep Plot-->
         <scene sceneID="PUl-SS-CKW">
             <objects>
-                <viewController id="XZO-bG-ea3" customClass="StaticMagicSheetViewController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Crescent Rep Plot" id="XZO-bG-ea3" customClass="StaticMagicSheetViewController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gXu-Yr-lYE"/>
                         <viewControllerLayoutGuide type="bottom" id="nkF-4F-HbM"/>
@@ -38,127 +38,1480 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-YI-CSk" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="61" height="61"/>
-                                <state key="normal" title="40"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R99"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="BKL-Dk-zgV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-Iu-Gsk" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="20" y="103" width="61" height="61"/>
-                                <state key="normal" title="1"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Kex-bw-UBG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c38-kd-R4P" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="89" y="103" width="61" height="61"/>
-                                <state key="normal" title="2"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="1l5-Hy-jRp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-3c-2rF" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="158" y="103" width="61" height="61"/>
-                                <state key="normal" title="3"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="56x-Wg-q0V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9k-ld-BZa" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="20" y="192" width="61" height="61"/>
-                                <state key="normal" title="11"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="qIj-Ck-2A5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orm-4E-GHU" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="89" y="192" width="61" height="61"/>
-                                <state key="normal" title="12"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Xsk-cq-k0l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx1-8B-89z" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="158" y="192" width="61" height="61"/>
-                                <state key="normal" title="13"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="yH8-nq-Npu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-5W-hC7" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="20" y="293" width="61" height="61"/>
-                                <state key="normal" title="31"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="HvH-n3-7AC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geh-MO-Rad" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="89" y="293" width="61" height="61"/>
-                                <state key="normal" title="32"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="JrA-db-JbX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exl-p4-Cp4" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                <rect key="frame" x="158" y="293" width="61" height="61"/>
-                                <state key="normal" title="33"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="hqT-lK-sRa"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-dL-FOo">
+                                <rect key="frame" x="20" y="20" width="540" height="423"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="n9V-Aj-Me0">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="141"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-ya-ELx">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeO-pW-8c4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-Ia-7Tq">
+                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-JV-8pP" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="20"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="D1a-bv-knp"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvG-MJ-zle" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="21"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="c77-d5-BnW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sif-e9-D5E" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="22"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="vhQ-Fj-Dwh"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-qe-EgB">
+                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiN-ut-X2y" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="1"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="RK0-Ls-saz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBG-6v-z8K" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="2"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="xFp-kF-0eM"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f8-PC-6we" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="3"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="dPu-LL-aF6"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NsW-31-IHV">
+                                                <rect key="frame" x="210" y="0.0" width="120" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diagonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w51-Qb-IjI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TB6-Xf-GCw">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-Vb-tB7" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="6"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="0xK-AT-zXU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-D5-nWp" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="7"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="uwr-JU-Im3"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-4S-qGu">
+                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-HT-qxl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="4"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="6Rn-dL-kEH"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e6-yWj" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="5"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="ywm-33-otb"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-tQ-RER">
+                                                <rect key="frame" x="360" y="0.0" width="120" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Fill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSG-EY-TBj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-O3-wAO">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="647-zy-Ox6" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="8"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="9nT-6V-GGV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N28-Z2-vkw" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="9"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="q4u-y6-HrO"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jR9-kQ-Mpq">
+                                        <rect key="frame" x="0.0" y="171" width="540" height="141"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-Cb-WHj">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZF-lL-kgD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-oM-0kf">
+                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-84-awU" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="14"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="2TA-m2-d2k"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCd-Qw-Fwl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="15"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Iik-tG-AAM"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRR-Wd-PgE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="16"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="7v8-72-WrC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atp-NX-LaU">
+                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="WIx-6h-66H" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-cZ-wQC" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="25"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="tIA-4R-hml"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-3u-k2s" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="26"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Zb0-tS-iU9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-Ye-50e" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="150" y="0.0" width="30" height="60"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-qc-6aP">
+                                                <rect key="frame" x="210" y="0.0" width="180" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-Db-0S8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-vp-xEj">
+                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8i-1x-1bY" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="17"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="UhL-o8-bwC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-3X-9en" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="18"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="sU3-rP-Qd9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-zD-xGe" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="19"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Pa5-hQ-cQK"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFj-Sv-iYw">
+                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="PIv-Cs-0lh" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-4B-3UR" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="23"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="4a0-do-TDR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-G8-Rft" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="24"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="vqd-ZL-8Uh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-xr-MJ2" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="150" y="0.0" width="30" height="60"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-V9-En6">
+                                                <rect key="frame" x="420" y="0.0" width="120" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTl-Mg-U6X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-fP-H7h">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kft-gp-vNA" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="11"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Gk5-4g-9xj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq6-3B-uHE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="13"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="WgS-Ld-jiw"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-w1-cR1">
+                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-hv-Z3L" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="10"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="JM2-sZ-KWm"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-2b-D8f" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="12"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Raa-eo-TJg"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-8z-tQc">
+                                        <rect key="frame" x="0.0" y="341" width="480" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHq-Nt-hQT">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TU-O2-ofD">
+                                                <rect key="frame" x="0.0" y="21" width="480" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-9O-NcV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="201"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="eIQ-gI-gAg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlt-u1-379" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="202"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="4kN-Yt-DQR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZZ-Fv-d0a" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="203"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="7UL-Vn-jNh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-ED-izJ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="204"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="lqS-0S-YYf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnO-Zd-RLQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="205"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="o07-A5-tya"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-6F-VHG" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="206"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="3f1-8V-iVB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-2D-5d5" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="360" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="207"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="T4k-VX-ozg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-Jk-8bQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="420" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="208"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="aDK-Ji-mJm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="top" secondItem="gXu-Yr-lYE" secondAttribute="bottom" id="7IZ-Yf-5qQ"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="leading" secondItem="nvr-n7-yKU" secondAttribute="leadingMargin" id="kf3-Ef-1ec"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Magic Sheet" image="MagicSheet" id="aZ3-67-YyA"/>
+                    <tabBarItem key="tabBarItem" title="Crescent" image="MagicSheet" id="aZ3-67-YyA"/>
                     <connections>
-                        <outletCollection property="buttons" destination="Hx1-8B-89z" collectionClass="NSMutableArray" id="9Yl-mO-dRb"/>
-                        <outletCollection property="buttons" destination="8hG-3c-2rF" collectionClass="NSMutableArray" id="BIp-RE-lcy"/>
-                        <outletCollection property="buttons" destination="c38-kd-R4P" collectionClass="NSMutableArray" id="gKn-ea-frM"/>
-                        <outletCollection property="buttons" destination="orm-4E-GHU" collectionClass="NSMutableArray" id="wLc-Xq-OtA"/>
-                        <outletCollection property="buttons" destination="VOI-Iu-Gsk" collectionClass="NSMutableArray" id="O4C-Sq-LRs"/>
-                        <outletCollection property="buttons" destination="Z9k-ld-BZa" collectionClass="NSMutableArray" id="3cU-cb-Vey"/>
-                        <outletCollection property="buttons" destination="TYW-YI-CSk" collectionClass="NSMutableArray" id="pCl-eg-iao"/>
-                        <outletCollection property="buttons" destination="Rya-5W-hC7" collectionClass="NSMutableArray" id="yTN-ca-2Qr"/>
-                        <outletCollection property="buttons" destination="exl-p4-Cp4" collectionClass="NSMutableArray" id="XsZ-3i-0dm"/>
-                        <outletCollection property="buttons" destination="geh-MO-Rad" collectionClass="NSMutableArray" id="HGg-9w-HYN"/>
+                        <outletCollection property="buttons" destination="vDe-JV-8pP" collectionClass="NSMutableArray" id="nDA-o9-tds"/>
+                        <outletCollection property="buttons" destination="KvG-MJ-zle" collectionClass="NSMutableArray" id="TRL-Kq-xjH"/>
+                        <outletCollection property="buttons" destination="sif-e9-D5E" collectionClass="NSMutableArray" id="uRX-rW-A7m"/>
+                        <outletCollection property="buttons" destination="RiN-ut-X2y" collectionClass="NSMutableArray" id="aho-Wh-frp"/>
+                        <outletCollection property="buttons" destination="TBG-6v-z8K" collectionClass="NSMutableArray" id="1ko-BO-j99"/>
+                        <outletCollection property="buttons" destination="1f8-PC-6we" collectionClass="NSMutableArray" id="z32-74-fbV"/>
+                        <outletCollection property="buttons" destination="1Hh-Vb-tB7" collectionClass="NSMutableArray" id="pUD-2n-JYN"/>
+                        <outletCollection property="buttons" destination="tV3-D5-nWp" collectionClass="NSMutableArray" id="53d-eK-6Ma"/>
+                        <outletCollection property="buttons" destination="TEg-HT-qxl" collectionClass="NSMutableArray" id="3Vg-0O-p92"/>
+                        <outletCollection property="buttons" destination="PmS-e6-yWj" collectionClass="NSMutableArray" id="erP-z0-8Md"/>
+                        <outletCollection property="buttons" destination="647-zy-Ox6" collectionClass="NSMutableArray" id="EYu-LW-rs9"/>
+                        <outletCollection property="buttons" destination="N28-Z2-vkw" collectionClass="NSMutableArray" id="ReW-PC-ITA"/>
+                        <outletCollection property="buttons" destination="yKb-84-awU" collectionClass="NSMutableArray" id="cjg-tv-6l0"/>
+                        <outletCollection property="buttons" destination="yCd-Qw-Fwl" collectionClass="NSMutableArray" id="JJJ-bG-cXi"/>
+                        <outletCollection property="buttons" destination="DRR-Wd-PgE" collectionClass="NSMutableArray" id="bfA-sA-3yx"/>
+                        <outletCollection property="buttons" destination="D8i-1x-1bY" collectionClass="NSMutableArray" id="a14-wD-lwL"/>
+                        <outletCollection property="buttons" destination="lmt-3X-9en" collectionClass="NSMutableArray" id="viO-Un-beV"/>
+                        <outletCollection property="buttons" destination="BoH-zD-xGe" collectionClass="NSMutableArray" id="TJ3-eT-AjV"/>
+                        <outletCollection property="buttons" destination="Lyb-cZ-wQC" collectionClass="NSMutableArray" id="7pd-J0-q9G"/>
+                        <outletCollection property="buttons" destination="a3Z-3u-k2s" collectionClass="NSMutableArray" id="57W-Cv-JYZ"/>
+                        <outletCollection property="buttons" destination="IXK-4B-3UR" collectionClass="NSMutableArray" id="P7e-dW-Fs0"/>
+                        <outletCollection property="buttons" destination="5F0-G8-Rft" collectionClass="NSMutableArray" id="M7X-U2-y8J"/>
+                        <outletCollection property="buttons" destination="Kft-gp-vNA" collectionClass="NSMutableArray" id="4uo-oG-tLw"/>
+                        <outletCollection property="buttons" destination="Nq6-3B-uHE" collectionClass="NSMutableArray" id="E6J-Ep-b0U"/>
+                        <outletCollection property="buttons" destination="U8a-hv-Z3L" collectionClass="NSMutableArray" id="FIi-pD-Cg7"/>
+                        <outletCollection property="buttons" destination="EFc-2b-D8f" collectionClass="NSMutableArray" id="iSZ-rO-fAt"/>
+                        <outletCollection property="buttons" destination="O0l-9O-NcV" collectionClass="NSMutableArray" id="fEM-gn-P1S"/>
+                        <outletCollection property="buttons" destination="Qlt-u1-379" collectionClass="NSMutableArray" id="Lq8-az-efP"/>
+                        <outletCollection property="buttons" destination="RZZ-Fv-d0a" collectionClass="NSMutableArray" id="S1z-2I-Fi7"/>
+                        <outletCollection property="buttons" destination="nYa-ED-izJ" collectionClass="NSMutableArray" id="Dcp-h7-HP3"/>
+                        <outletCollection property="buttons" destination="nnO-Zd-RLQ" collectionClass="NSMutableArray" id="B4J-Ga-BBU"/>
+                        <outletCollection property="buttons" destination="raj-6F-VHG" collectionClass="NSMutableArray" id="ZWr-6z-OOm"/>
+                        <outletCollection property="buttons" destination="TRt-2D-5d5" collectionClass="NSMutableArray" id="gHd-OR-EbX"/>
+                        <outletCollection property="buttons" destination="JIJ-Jk-8bQ" collectionClass="NSMutableArray" id="sUI-OY-pif"/>
+                        <outletCollection property="stackViews" destination="5oj-dL-FOo" collectionClass="NSMutableArray" id="22n-sc-Pqy"/>
+                        <outletCollection property="stackViews" destination="n9V-Aj-Me0" collectionClass="NSMutableArray" id="EpF-n5-mKF"/>
+                        <outletCollection property="stackViews" destination="Rek-ya-ELx" collectionClass="NSMutableArray" id="kev-Mh-38c"/>
+                        <outletCollection property="stackViews" destination="jCW-Ia-7Tq" collectionClass="NSMutableArray" id="yXb-Xv-VZc"/>
+                        <outletCollection property="stackViews" destination="8A2-qe-EgB" collectionClass="NSMutableArray" id="EMQ-tW-WtB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF8-ku-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="1149"/>
+            <point key="canvasLocation" x="268" y="1139"/>
+        </scene>
+        <!--OBT Rep Plot-->
+        <scene sceneID="lPd-nc-pHL">
+            <objects>
+                <viewController title="OBT Rep Plot" id="W7j-ep-ArK" customClass="StaticMagicSheetViewController" customModule="FluidQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A4z-4b-ZjM"/>
+                        <viewControllerLayoutGuide type="bottom" id="OnA-4p-zhj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vQc-hj-wfP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FxK-2u-5ta">
+                                <rect key="frame" x="20" y="20" width="510" height="564"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1y9-dr-498">
+                                        <rect key="frame" x="0.0" y="0.0" width="510" height="81"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-hX-stI">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-JN-zFT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DH3-89-Dp4">
+                                                        <rect key="frame" x="0.0" y="21" width="300" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-Sg-kRQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="1"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="qqi-Ic-PBc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-UX-sAV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="2"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="kyv-C9-8cF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-dU-r9g" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="3"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="ib9-f4-D2f"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZE-vK-y5O" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="4"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="SFt-ED-bL4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwL-qT-VdV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="5"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="N/C"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="4te-Vq-35r"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-l4-tD8">
+                                                <rect key="frame" x="330" y="0.0" width="180" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-OE-sPQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ct-rQ-D6d">
+                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRr-Yw-6Fw" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="6"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="Seachanger"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="dAx-Oh-H03"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-kQ-O5d" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="7"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="Seachanger"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="P3z-YF-TgS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-xR-fKp" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="8"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="Seachanger"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="lz0-aB-a38"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-ss-00U">
+                                        <rect key="frame" x="0.0" y="106" width="450" height="81"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3Dk-T2-3o1">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-3Q-M8W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aw-NJ-Ecj">
+                                                        <rect key="frame" x="0.0" y="21" width="300" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-Xn-7yS" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="11"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R302"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="GcP-cg-2xI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U73-b9-egZ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="12"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R302"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="8ld-KB-j7U"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuq-jb-16N" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="13"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R302"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="c2V-Ws-reC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi0-s6-Whw" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="14"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R302"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="nle-I1-Vpj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2u-Mt-nKM" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="15"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R302"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="rKo-ZN-IwW"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-IL-zy7">
+                                                <rect key="frame" x="330" y="0.0" width="120" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front LED Fill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxf-AZ-q9j">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsO-lo-BEm">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toa-eG-9sG" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="29"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="A2N-R3-2jQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oR-RM-2Q6" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="30"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="OEk-XS-BwC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RHl-9v-oQ0">
+                                        <rect key="frame" x="0.0" y="211" width="300" height="81"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-Zx-LE8">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sr9-6d-DPJ">
+                                                <rect key="frame" x="0.0" y="21" width="300" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-fZ-fZS" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="16"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="YtH-1b-wHm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXK-Br-iJV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="17"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="kEL-at-Jcj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWp-p5-URT" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="18"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="BbS-Le-x0T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wua-Sa-qnx" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="19"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="q7P-wP-k5z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-fM-8mT" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="20"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="olR-bc-7z0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Ih-k8-QS4">
+                                        <rect key="frame" x="0.0" y="317" width="420" height="141"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bw5-md-OTI">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXl-YY-5lr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-zW-gfA">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-0t-jM3" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="22"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="PEp-iI-YHJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rli-x7-1eY" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="24"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="PjB-ve-gJp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-jQ-13Z">
+                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzu-fW-ufM" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="21"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="kNz-2O-zCt"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjJ-41-BlX" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="23"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="wiI-T1-4Bb"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oxh-Km-xI5">
+                                                <rect key="frame" x="150" y="0.0" width="120" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viV-7t-uLx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqH-Xz-zRK">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNV-oA-NMM" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="17"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="MyI-4w-wvn"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-Rh-4Qo" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="18"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="oeg-DP-f7a"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1P-ih-eSW">
+                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-Jo-CGq" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="23"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="p2v-Cw-7L4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXO-AP-Dqo" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="24"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R74"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="Xdr-t1-w9F"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="flZ-eq-mGS">
+                                                <rect key="frame" x="300" y="0.0" width="120" height="141"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side LED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49C-aD-oTK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-vU-HPX">
+                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-jx-50y" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="38"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="ogN-12-T5C"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-aK-g9e" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="40"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="LLV-Ih-PHe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKg-Nk-Lm9">
+                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVp-bI-ukX" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="37"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="SJb-De-jk9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-Hl-BNK" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="39"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="widthClass=compact">
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="4oq-sI-WCN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="smd-1e-KDX">
+                                        <rect key="frame" x="0.0" y="482" width="360" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-Eg-F8d">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-Kf-VLo">
+                                                <rect key="frame" x="0.0" y="21" width="360" height="61"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-8i-1Ga" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="31"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="epW-VM-nTV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEg-oH-F9a" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="32"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="Qsr-pV-gOE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-hl-UFb" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="33"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="iEE-6f-yXi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-Nc-11u" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="Glh-03-5Sl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHW-6Z-gu3" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="35"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="PA3-B8-zeM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5r-St-mAE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="60" height="61"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="36"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="LED"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleButton:" destination="W7j-ep-ArK" eventType="touchUpInside" id="U7U-X3-aZX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FxK-2u-5ta" firstAttribute="leading" secondItem="vQc-hj-wfP" secondAttribute="leadingMargin" id="x0j-lX-DfN"/>
+                            <constraint firstItem="FxK-2u-5ta" firstAttribute="top" secondItem="A4z-4b-ZjM" secondAttribute="bottom" id="yHc-jc-27i"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OBT" image="MagicSheet" id="gAF-Xe-n3r"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="TUE-0t-jM3" collectionClass="NSMutableArray" id="Ly6-l9-mV6"/>
+                        <outletCollection property="buttons" destination="Rli-x7-1eY" collectionClass="NSMutableArray" id="xzt-Nj-kFB"/>
+                        <outletCollection property="buttons" destination="MNV-oA-NMM" collectionClass="NSMutableArray" id="qn2-eL-c06"/>
+                        <outletCollection property="buttons" destination="OtX-Rh-4Qo" collectionClass="NSMutableArray" id="w9p-UZ-Ilq"/>
+                        <outletCollection property="buttons" destination="pzu-fW-ufM" collectionClass="NSMutableArray" id="vdl-x2-2wT"/>
+                        <outletCollection property="buttons" destination="QjJ-41-BlX" collectionClass="NSMutableArray" id="sXV-9d-5Hu"/>
+                        <outletCollection property="buttons" destination="rQI-Jo-CGq" collectionClass="NSMutableArray" id="cKV-Vv-ItT"/>
+                        <outletCollection property="buttons" destination="NXO-AP-Dqo" collectionClass="NSMutableArray" id="hyb-Oe-mj7"/>
+                        <outletCollection property="buttons" destination="jDy-jx-50y" collectionClass="NSMutableArray" id="YPc-Wg-1Qi"/>
+                        <outletCollection property="buttons" destination="S6J-aK-g9e" collectionClass="NSMutableArray" id="0mG-t4-ArI"/>
+                        <outletCollection property="buttons" destination="NVp-bI-ukX" collectionClass="NSMutableArray" id="dwa-3C-1II"/>
+                        <outletCollection property="buttons" destination="LSa-Hl-BNK" collectionClass="NSMutableArray" id="rmp-c9-kzM"/>
+                        <outletCollection property="buttons" destination="ixr-8i-1Ga" collectionClass="NSMutableArray" id="h7m-dx-fL4"/>
+                        <outletCollection property="buttons" destination="cEg-oH-F9a" collectionClass="NSMutableArray" id="cg1-K4-ncm"/>
+                        <outletCollection property="buttons" destination="gGl-hl-UFb" collectionClass="NSMutableArray" id="eXz-jP-eJ0"/>
+                        <outletCollection property="buttons" destination="ScX-Nc-11u" collectionClass="NSMutableArray" id="8gw-qj-PJ2"/>
+                        <outletCollection property="buttons" destination="fHW-6Z-gu3" collectionClass="NSMutableArray" id="Oj4-Vf-Vty"/>
+                        <outletCollection property="buttons" destination="L5r-St-mAE" collectionClass="NSMutableArray" id="f5J-5a-4YX"/>
+                        <outletCollection property="stackViews" destination="FxK-2u-5ta" collectionClass="NSMutableArray" id="s1c-Fa-xJo"/>
+                        <outletCollection property="buttons" destination="JTZ-UX-sAV" collectionClass="NSMutableArray" id="PTr-Sq-h5Y"/>
+                        <outletCollection property="stackViews" destination="vcz-hX-stI" collectionClass="NSMutableArray" id="Epk-B0-RFH"/>
+                        <outletCollection property="stackViews" destination="DH3-89-Dp4" collectionClass="NSMutableArray" id="27x-Ii-lrF"/>
+                        <outletCollection property="buttons" destination="hWT-Sg-kRQ" collectionClass="NSMutableArray" id="qpw-Yx-She"/>
+                        <outletCollection property="buttons" destination="hS5-dU-r9g" collectionClass="NSMutableArray" id="yGN-uX-jRp"/>
+                        <outletCollection property="buttons" destination="mZE-vK-y5O" collectionClass="NSMutableArray" id="Isp-yb-mTd"/>
+                        <outletCollection property="buttons" destination="vwL-qT-VdV" collectionClass="NSMutableArray" id="5No-hE-Acj"/>
+                        <outletCollection property="buttons" destination="LRr-Yw-6Fw" collectionClass="NSMutableArray" id="ojc-mI-XhI"/>
+                        <outletCollection property="buttons" destination="jBF-kQ-O5d" collectionClass="NSMutableArray" id="DU7-EL-Bex"/>
+                        <outletCollection property="buttons" destination="BqL-xR-fKp" collectionClass="NSMutableArray" id="4Be-WE-TVk"/>
+                        <outletCollection property="buttons" destination="dba-Xn-7yS" collectionClass="NSMutableArray" id="YMd-Ji-R3h"/>
+                        <outletCollection property="buttons" destination="U73-b9-egZ" collectionClass="NSMutableArray" id="fvU-mD-Tym"/>
+                        <outletCollection property="buttons" destination="Cuq-jb-16N" collectionClass="NSMutableArray" id="Nem-Fa-d2B"/>
+                        <outletCollection property="buttons" destination="Fi0-s6-Whw" collectionClass="NSMutableArray" id="9Qq-Wj-44B"/>
+                        <outletCollection property="buttons" destination="S2u-Mt-nKM" collectionClass="NSMutableArray" id="RBb-xk-D2J"/>
+                        <outletCollection property="buttons" destination="toa-eG-9sG" collectionClass="NSMutableArray" id="luE-1i-zB0"/>
+                        <outletCollection property="buttons" destination="6oR-RM-2Q6" collectionClass="NSMutableArray" id="UXM-q9-Wik"/>
+                        <outletCollection property="buttons" destination="sVY-fZ-fZS" collectionClass="NSMutableArray" id="OCt-Fm-Rz4"/>
+                        <outletCollection property="buttons" destination="AXK-Br-iJV" collectionClass="NSMutableArray" id="OKK-4K-Zf4"/>
+                        <outletCollection property="buttons" destination="wWp-p5-URT" collectionClass="NSMutableArray" id="1LY-yt-1U6"/>
+                        <outletCollection property="buttons" destination="wua-Sa-qnx" collectionClass="NSMutableArray" id="8je-cF-kAG"/>
+                        <outletCollection property="buttons" destination="v3D-fM-8mT" collectionClass="NSMutableArray" id="ZNV-eU-i0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEb-jE-L09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="1881"/>
         </scene>
         <!--Keypad-->
         <scene sceneID="EYg-wM-h8r">
@@ -812,6 +2165,7 @@ Dim</string>
                         <segue destination="5gY-pq-uQR" kind="relationship" relationship="viewControllers" id="Ejj-kU-YMR"/>
                         <segue destination="Pi2-C8-A0U" kind="relationship" relationship="viewControllers" id="Ft8-5s-wOQ"/>
                         <segue destination="XZO-bG-ea3" kind="relationship" relationship="viewControllers" id="83N-Op-JrL"/>
+                        <segue destination="W7j-ep-ArK" kind="relationship" relationship="viewControllers" id="WFl-zc-jAo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cK6-jh-2gi" userLabel="First Responder" sceneMemberID="firstResponder"/>

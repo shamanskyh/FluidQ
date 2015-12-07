@@ -44,6 +44,7 @@
 		4A3C55441BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C55431BC3860E009CBAAE /* Constants.swift */; };
 		4A4188281C08F4A800BC890C /* MagicSheetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */; };
+		4A4776CC1C16064500127764 /* MagicSheetSpacerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4776CB1C16064500127764 /* MagicSheetSpacerViews.swift */; };
 		4A8C57E71BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
 		4A8C57E81BCC079600C2C98C /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */; };
 		4A9C9B0E1BBB64D00098FC5A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B0D1BBB64D00098FC5A /* Command.swift */; };
@@ -113,6 +114,7 @@
 		4A4188271C08F4A800BC890C /* MagicSheetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetCollectionViewCell.swift; path = "Magic Sheet/Views/MagicSheetCollectionViewCell.swift"; sourceTree = "<group>"; };
 		4A45EECA1BE6E5B200DFD658 /* Incoming.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Incoming.ino; path = Arduino/Incoming/Incoming.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		4A45EECC1BE6E7A100DFD658 /* Outgoing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; name = Outgoing.ino; path = Arduino/Outgoing/Outgoing.ino; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		4A4776CB1C16064500127764 /* MagicSheetSpacerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MagicSheetSpacerViews.swift; path = "Static Magic Sheet/MagicSheetSpacerViews.swift"; sourceTree = "<group>"; };
 		4A8C57E61BCC079600C2C98C /* MultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerManager.swift; path = "Shared Models/MultipeerManager.swift"; sourceTree = "<group>"; };
 		4A9C9ACB1BBB5E710098FC5A /* FluidQ Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FluidQ Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C9AF81BBB63AC0098FC5A /* FluidQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluidQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				4ACA1E5C1C0F684500CFE5B6 /* MagicSheetButton.swift */,
+				4A4776CB1C16064500127764 /* MagicSheetSpacerViews.swift */,
 				4ACA1E5E1C0F6B0900CFE5B6 /* StaticMagicSheetViewController.swift */,
 			);
 			name = "Static Magic Sheet";
@@ -492,6 +495,7 @@
 				4A9C9B0F1BBB64D00098FC5A /* Command.swift in Sources */,
 				4A9C9B121BBB65740098FC5A /* Keystroke.swift in Sources */,
 				4AF2C3DC1BFABEC5003BF0FC /* MagicSheetPurposeGroupView.swift in Sources */,
+				4A4776CC1C16064500127764 /* MagicSheetSpacerViews.swift in Sources */,
 				4A3774D61C12530C00DA630D /* Selection.swift in Sources */,
 				4A3C55451BC3860E009CBAAE /* Constants.swift in Sources */,
 				4A33C1BA1BF2682A00AE8566 /* Instrument.swift in Sources */,
