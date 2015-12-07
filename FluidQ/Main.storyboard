@@ -722,11 +722,6 @@
                         <outletCollection property="buttons" destination="raj-6F-VHG" collectionClass="NSMutableArray" id="ZWr-6z-OOm"/>
                         <outletCollection property="buttons" destination="TRt-2D-5d5" collectionClass="NSMutableArray" id="gHd-OR-EbX"/>
                         <outletCollection property="buttons" destination="JIJ-Jk-8bQ" collectionClass="NSMutableArray" id="sUI-OY-pif"/>
-                        <outletCollection property="stackViews" destination="5oj-dL-FOo" collectionClass="NSMutableArray" id="22n-sc-Pqy"/>
-                        <outletCollection property="stackViews" destination="n9V-Aj-Me0" collectionClass="NSMutableArray" id="EpF-n5-mKF"/>
-                        <outletCollection property="stackViews" destination="Rek-ya-ELx" collectionClass="NSMutableArray" id="kev-Mh-38c"/>
-                        <outletCollection property="stackViews" destination="jCW-Ia-7Tq" collectionClass="NSMutableArray" id="yXb-Xv-VZc"/>
-                        <outletCollection property="stackViews" destination="8A2-qe-EgB" collectionClass="NSMutableArray" id="EMQ-tW-WtB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF8-ku-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1484,10 +1479,7 @@
                         <outletCollection property="buttons" destination="ScX-Nc-11u" collectionClass="NSMutableArray" id="8gw-qj-PJ2"/>
                         <outletCollection property="buttons" destination="fHW-6Z-gu3" collectionClass="NSMutableArray" id="Oj4-Vf-Vty"/>
                         <outletCollection property="buttons" destination="L5r-St-mAE" collectionClass="NSMutableArray" id="f5J-5a-4YX"/>
-                        <outletCollection property="stackViews" destination="FxK-2u-5ta" collectionClass="NSMutableArray" id="s1c-Fa-xJo"/>
                         <outletCollection property="buttons" destination="JTZ-UX-sAV" collectionClass="NSMutableArray" id="PTr-Sq-h5Y"/>
-                        <outletCollection property="stackViews" destination="vcz-hX-stI" collectionClass="NSMutableArray" id="Epk-B0-RFH"/>
-                        <outletCollection property="stackViews" destination="DH3-89-Dp4" collectionClass="NSMutableArray" id="27x-Ii-lrF"/>
                         <outletCollection property="buttons" destination="hWT-Sg-kRQ" collectionClass="NSMutableArray" id="qpw-Yx-She"/>
                         <outletCollection property="buttons" destination="hS5-dU-r9g" collectionClass="NSMutableArray" id="yGN-uX-jRp"/>
                         <outletCollection property="buttons" destination="mZE-vK-y5O" collectionClass="NSMutableArray" id="Isp-yb-mTd"/>
