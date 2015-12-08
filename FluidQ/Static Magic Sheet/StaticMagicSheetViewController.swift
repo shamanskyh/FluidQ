@@ -162,7 +162,7 @@ class StaticMagicSheetViewController: UIViewController {
     // MARK: - Rotation
     override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animateAlongsideTransition({ (context: UIViewControllerTransitionCoordinatorContext) -> Void in
-            self.buttons.forEach({ $0.invalidateIntrinsicContentSize(); $0.setNeedsDisplay() })
+            //self.buttons.forEach({ $0.invalidateIntrinsicContentSize(); $0.setNeedsDisplay() })
         }, completion: nil)
     }
     

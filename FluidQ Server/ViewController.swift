@@ -43,6 +43,9 @@ class ViewController: NSViewController {
         }
     }
     
+    /// a queue of serial write commands
+    let serialWriteQueue = NSOperationQueue()
+    
     /// variable that tracks iOS connection status
     private var iOSConnectionStatus: Bool = false {
         didSet {
@@ -81,7 +84,19 @@ class ViewController: NSViewController {
         // TODO: Higher baud rate?
         if let serial = serialFileDescriptor where (filteredCommand?.keystrokes.first?.identifier != "missingSelection") {
             let stringToSend = String(filteredCommand!.keystrokes.map({ $0.keyEquivalent }))
-            write(serial, stringToSend, stringToSend.characters.count)
+            let groupedByDelay = stringToSend.characters.split(Character(UnicodeScalar(29))).map(String.init)
+            if groupedByDelay.count == 1 {
+                serialWriteQueue.addOperationWithBlock({
+                    write(serial, stringToSend, stringToSend.characters.count)
+                })
+            } else {
+                for delayGroup in groupedByDelay {
+                    serialWriteQueue.addOperationWithBlock({
+                        write(serial, delayGroup, delayGroup.characters.count)
+                        usleep(50000)   // delay 0.04 seconds
+                    })
+                }
+            }
         }
         
         // append onto the array
@@ -110,6 +125,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         multipeerManager.serverDelegate = self
+        serialWriteQueue.maxConcurrentOperationCount = 1    // queue must be serial
         
         // Not sure why this AppKit class doesn't seem to be updated using
         // Swift conventions yet...
@@ -198,9 +214,9 @@ extension ViewController: OSCServerDelegate {
             sendCommandToBoard(command)
         } else if message.address == "/input2" {    // then try color
             let convertedValue = Int((Double(value) / 127) * 360)
-            let saturationKeystrokes = kSaturationKeystrokes + [kAtKeystroke, kFullKeystroke]
+            //let saturationKeystrokes = kSaturationKeystrokes + [kAtKeystroke, kFullKeystroke]
             let hueKeystrokes = kHueKeystrokes + [kAtKeystroke] + doubleToKeystrokes(Double(convertedValue), padZeros: true)
-            let fullKeystrokes = saturationKeystrokes + hueKeystrokes + [kEnterKeystroke]
+            let fullKeystrokes = hueKeystrokes + [kEnterKeystroke, kDelayFunctionKeystroke]
             let command = Command(withKeystrokes: fullKeystrokes)
             command.requiresSelection = true
             command.requiresColorChangingChannelSelection = true

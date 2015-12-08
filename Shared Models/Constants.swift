@@ -20,9 +20,10 @@ let kVisibleClearKeystroke = Keystroke(identifier: "visibleClear", keyEquivalent
 
 // MARK: - Color
 // Saturation is Macro 301
-let kSaturationKeystrokes = [Keystroke(identifier: "macro", keyEquivalent: "m", plaintext: "")] + doubleToKeystrokes(301, suppressPlaintext: true) + [Keystroke(identifier: "macroEnterSaturation", keyEquivalent: "\n", plaintext: "Saturation")]
+let kSaturationKeystrokes = [Keystroke(identifier: "macro", keyEquivalent: "m", plaintext: ""), kDelayFunctionKeystroke] + doubleToKeystrokes(301, suppressPlaintext: true) + [kDelayFunctionKeystroke, Keystroke(identifier: "macroEnterSaturation", keyEquivalent: "\n", plaintext: "Saturation"), kDelayFunctionKeystroke]
 // Hue is Macro 302
-let kHueKeystrokes = [Keystroke(identifier: "macro", keyEquivalent: "m", plaintext: "")] + doubleToKeystrokes(302, suppressPlaintext: true) + [Keystroke(identifier: "macroEnterHue", keyEquivalent: "\n", plaintext: "Hue")]
+let kHueKeystrokes = [Keystroke(identifier: "macro", keyEquivalent: "m", plaintext: ""), kDelayFunctionKeystroke] + doubleToKeystrokes(302, suppressPlaintext: true) + [kDelayFunctionKeystroke, Keystroke(identifier: "macroEnterHue", keyEquivalent: "\n", plaintext: "Hue"), kDelayFunctionKeystroke]
+let kDelayFunctionKeystroke = Keystroke(identifier: "delayKeystroke", keyEquivalent: Character(UnicodeScalar(29)), plaintext: "")
 
 // MARK: - Cueing
 let kRecordKeystroke = Keystroke(identifier: "record", keyEquivalent: "r", plaintext: "Record")

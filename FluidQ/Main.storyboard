@@ -38,25 +38,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-dL-FOo">
-                                <rect key="frame" x="20" y="20" width="540" height="423"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-dL-FOo">
+                                <rect key="frame" x="30" y="64" width="540" height="422.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="n9V-Aj-Me0">
-                                        <rect key="frame" x="0.0" y="0.0" width="480" height="141"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="140.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-ya-ELx">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="141"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeO-pW-8c4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-Ia-7Tq">
-                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-Ia-7Tq">
+                                                        <rect key="frame" x="0.0" y="20" width="180" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-JV-8pP" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-JV-8pP" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="20"/>
@@ -70,7 +70,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="D1a-bv-knp"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvG-MJ-zle" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvG-MJ-zle" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="21"/>
@@ -84,7 +84,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="c77-d5-BnW"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sif-e9-D5E" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sif-e9-D5E" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="120" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="22"/>
@@ -100,10 +100,10 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-qe-EgB">
-                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-qe-EgB">
+                                                        <rect key="frame" x="0.0" y="80" width="180" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiN-ut-X2y" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiN-ut-X2y" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="1"/>
@@ -117,7 +117,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="RK0-Ls-saz"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBG-6v-z8K" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBG-6v-z8K" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="2"/>
@@ -131,7 +131,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="xFp-kF-0eM"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f8-PC-6we" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f8-PC-6we" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="120" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="3"/>
@@ -149,19 +149,19 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NsW-31-IHV">
-                                                <rect key="frame" x="210" y="0.0" width="120" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NsW-31-IHV">
+                                                <rect key="frame" x="210" y="0.0" width="120" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diagonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w51-Qb-IjI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TB6-Xf-GCw">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="TB6-Xf-GCw">
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-Vb-tB7" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-Vb-tB7" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="6"/>
@@ -175,7 +175,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="0xK-AT-zXU"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-D5-nWp" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-D5-nWp" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="7"/>
@@ -191,10 +191,10 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-4S-qGu">
-                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-4S-qGu">
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-HT-qxl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-HT-qxl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="4"/>
@@ -208,7 +208,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="6Rn-dL-kEH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e6-yWj" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e6-yWj" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="5"/>
@@ -226,19 +226,19 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-tQ-RER">
-                                                <rect key="frame" x="360" y="0.0" width="120" height="81"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-tQ-RER">
+                                                <rect key="frame" x="360" y="0.0" width="120" height="80.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Fill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSG-EY-TBj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-O3-wAO">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-O3-wAO">
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="647-zy-Ox6" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="647-zy-Ox6" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="8"/>
@@ -252,7 +252,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="9nT-6V-GGV"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N28-Z2-vkw" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N28-Z2-vkw" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="9"/>
@@ -272,73 +272,75 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jR9-kQ-Mpq">
-                                        <rect key="frame" x="0.0" y="171" width="540" height="141"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jR9-kQ-Mpq">
+                                        <rect key="frame" x="0.0" y="170" width="540" height="140.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-Cb-WHj">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-Cb-WHj">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="140.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZF-lL-kgD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="21"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-oM-0kf">
-                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SHA-zO-N9A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="80.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-84-awU" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="14"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="2TA-m2-d2k"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCd-Qw-Fwl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="15"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Iik-tG-AAM"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRR-Wd-PgE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="16"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="7v8-72-WrC"/>
-                                                                </connections>
-                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZF-lL-kgD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-oM-0kf">
+                                                                <rect key="frame" x="0.0" y="20" width="180" height="60"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-84-awU" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="14"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="2TA-m2-d2k"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCd-Qw-Fwl" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="15"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Iik-tG-AAM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRR-Wd-PgE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="16"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R02"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="7v8-72-WrC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atp-NX-LaU">
-                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Atp-NX-LaU">
+                                                        <rect key="frame" x="30" y="80" width="120" height="60"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="WIx-6h-66H" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
-                                                            </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-cZ-wQC" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-cZ-wQC" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="25"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -351,8 +353,8 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="tIA-4R-hml"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-3u-k2s" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-3u-k2s" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="26"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -365,77 +367,76 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Zb0-tS-iU9"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-Ye-50e" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="150" y="0.0" width="30" height="60"/>
-                                                            </view>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-qc-6aP">
-                                                <rect key="frame" x="210" y="0.0" width="180" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-qc-6aP">
+                                                <rect key="frame" x="210" y="0.0" width="180" height="140.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-Db-0S8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                        <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-vp-xEj">
-                                                        <rect key="frame" x="0.0" y="21" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xr1-ZD-C0G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="80.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8i-1x-1bY" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="17"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="UhL-o8-bwC"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-3X-9en" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="18"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="sU3-rP-Qd9"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-zD-xGe" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="120" y="0.0" width="60" height="60"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="19"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <variation key="widthClass=compact">
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Pa5-hQ-cQK"/>
-                                                                </connections>
-                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-Db-0S8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-vp-xEj">
+                                                                <rect key="frame" x="0.0" y="20" width="180" height="60"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8i-1x-1bY" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="17"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="UhL-o8-bwC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmt-3X-9en" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="18"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="sU3-rP-Qd9"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-zD-xGe" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="19"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="gelColor" value="R60"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="widthClass=compact">
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Pa5-hQ-cQK"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFj-Sv-iYw">
-                                                        <rect key="frame" x="0.0" y="81" width="180" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="iFj-Sv-iYw">
+                                                        <rect key="frame" x="30" y="80" width="120" height="60"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="PIv-Cs-0lh" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
-                                                            </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-4B-3UR" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-4B-3UR" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="23"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -448,8 +449,8 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="4a0-do-TDR"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-G8-Rft" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-G8-Rft" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="24"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -462,26 +463,23 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="vqd-ZL-8Uh"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-xr-MJ2" customClass="MagicSheetHalfSizeSpacerView" customModule="FluidQ" customModuleProvider="target">
-                                                                <rect key="frame" x="150" y="0.0" width="30" height="60"/>
-                                                            </view>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-V9-En6">
-                                                <rect key="frame" x="420" y="0.0" width="120" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-V9-En6">
+                                                <rect key="frame" x="420" y="0.0" width="120" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTl-Mg-U6X">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-fP-H7h">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-fP-H7h">
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kft-gp-vNA" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kft-gp-vNA" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="11"/>
@@ -495,7 +493,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="Gk5-4g-9xj"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq6-3B-uHE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq6-3B-uHE" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="13"/>
@@ -511,10 +509,10 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-w1-cR1">
-                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-w1-cR1">
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="60"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-hv-Z3L" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-hv-Z3L" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="10"/>
@@ -528,7 +526,7 @@
                                                                     <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="JM2-sZ-KWm"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-2b-D8f" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-2b-D8f" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="12"/>
@@ -548,19 +546,19 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-8z-tQc">
-                                        <rect key="frame" x="0.0" y="341" width="480" height="82"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-8z-tQc">
+                                        <rect key="frame" x="0.0" y="341" width="480" height="81.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHq-Nt-hQT">
-                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TU-O2-ofD">
-                                                <rect key="frame" x="0.0" y="21" width="480" height="61"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7TU-O2-ofD">
+                                                <rect key="frame" x="0.0" y="20" width="480" height="61"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-9O-NcV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-9O-NcV" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="201"/>
@@ -574,7 +572,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="eIQ-gI-gAg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlt-u1-379" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlt-u1-379" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="60" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="202"/>
@@ -588,7 +586,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="4kN-Yt-DQR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZZ-Fv-d0a" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZZ-Fv-d0a" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="120" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="203"/>
@@ -602,7 +600,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="7UL-Vn-jNh"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-ED-izJ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-ED-izJ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="204"/>
@@ -616,7 +614,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="lqS-0S-YYf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnO-Zd-RLQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnO-Zd-RLQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="240" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="205"/>
@@ -630,7 +628,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="o07-A5-tya"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-6F-VHG" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-6F-VHG" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="300" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="206"/>
@@ -644,7 +642,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="3f1-8V-iVB"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-2D-5d5" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-2D-5d5" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="360" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="207"/>
@@ -658,7 +656,7 @@
                                                             <action selector="toggleButton:" destination="XZO-bG-ea3" eventType="touchUpInside" id="T4k-VX-ozg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-Jk-8bQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-Jk-8bQ" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="420" y="0.0" width="60" height="61"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="208"/>
@@ -682,9 +680,21 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="5oj-dL-FOo" firstAttribute="top" secondItem="gXu-Yr-lYE" secondAttribute="bottom" id="7IZ-Yf-5qQ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5oj-dL-FOo" secondAttribute="trailing" id="0TG-DZ-7ar"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="top" secondItem="gXu-Yr-lYE" secondAttribute="bottom" constant="50" id="7IZ-Yf-5qQ"/>
+                            <constraint firstItem="nkF-4F-HbM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5oj-dL-FOo" secondAttribute="bottom" id="PwN-v7-sT3"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nvr-n7-yKU" secondAttribute="leadingMargin" id="XfO-mU-SHO"/>
                             <constraint firstItem="5oj-dL-FOo" firstAttribute="leading" secondItem="nvr-n7-yKU" secondAttribute="leadingMargin" id="kf3-Ef-1ec"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="centerX" secondItem="nvr-n7-yKU" secondAttribute="centerX" id="oj8-zJ-bAO"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="centerY" secondItem="nvr-n7-yKU" secondAttribute="centerY" id="rZr-TL-F2i"/>
+                            <constraint firstItem="5oj-dL-FOo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gXu-Yr-lYE" secondAttribute="bottom" id="wLr-wa-Ozw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7IZ-Yf-5qQ"/>
+                                <exclude reference="kf3-Ef-1ec"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Crescent" image="MagicSheet" id="aZ3-67-YyA"/>
                     <connections>
@@ -700,12 +710,6 @@
                         <outletCollection property="buttons" destination="PmS-e6-yWj" collectionClass="NSMutableArray" id="erP-z0-8Md"/>
                         <outletCollection property="buttons" destination="647-zy-Ox6" collectionClass="NSMutableArray" id="EYu-LW-rs9"/>
                         <outletCollection property="buttons" destination="N28-Z2-vkw" collectionClass="NSMutableArray" id="ReW-PC-ITA"/>
-                        <outletCollection property="buttons" destination="yKb-84-awU" collectionClass="NSMutableArray" id="cjg-tv-6l0"/>
-                        <outletCollection property="buttons" destination="yCd-Qw-Fwl" collectionClass="NSMutableArray" id="JJJ-bG-cXi"/>
-                        <outletCollection property="buttons" destination="DRR-Wd-PgE" collectionClass="NSMutableArray" id="bfA-sA-3yx"/>
-                        <outletCollection property="buttons" destination="D8i-1x-1bY" collectionClass="NSMutableArray" id="a14-wD-lwL"/>
-                        <outletCollection property="buttons" destination="lmt-3X-9en" collectionClass="NSMutableArray" id="viO-Un-beV"/>
-                        <outletCollection property="buttons" destination="BoH-zD-xGe" collectionClass="NSMutableArray" id="TJ3-eT-AjV"/>
                         <outletCollection property="buttons" destination="Lyb-cZ-wQC" collectionClass="NSMutableArray" id="7pd-J0-q9G"/>
                         <outletCollection property="buttons" destination="a3Z-3u-k2s" collectionClass="NSMutableArray" id="57W-Cv-JYZ"/>
                         <outletCollection property="buttons" destination="IXK-4B-3UR" collectionClass="NSMutableArray" id="P7e-dW-Fs0"/>
@@ -722,6 +726,12 @@
                         <outletCollection property="buttons" destination="raj-6F-VHG" collectionClass="NSMutableArray" id="ZWr-6z-OOm"/>
                         <outletCollection property="buttons" destination="TRt-2D-5d5" collectionClass="NSMutableArray" id="gHd-OR-EbX"/>
                         <outletCollection property="buttons" destination="JIJ-Jk-8bQ" collectionClass="NSMutableArray" id="sUI-OY-pif"/>
+                        <outletCollection property="buttons" destination="DRR-Wd-PgE" collectionClass="NSMutableArray" id="bfA-sA-3yx"/>
+                        <outletCollection property="buttons" destination="yKb-84-awU" collectionClass="NSMutableArray" id="cjg-tv-6l0"/>
+                        <outletCollection property="buttons" destination="yCd-Qw-Fwl" collectionClass="NSMutableArray" id="JJJ-bG-cXi"/>
+                        <outletCollection property="buttons" destination="BoH-zD-xGe" collectionClass="NSMutableArray" id="TJ3-eT-AjV"/>
+                        <outletCollection property="buttons" destination="lmt-3X-9en" collectionClass="NSMutableArray" id="viO-Un-beV"/>
+                        <outletCollection property="buttons" destination="D8i-1x-1bY" collectionClass="NSMutableArray" id="a14-wD-lwL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF8-ku-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -741,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FxK-2u-5ta">
-                                <rect key="frame" x="20" y="20" width="510" height="564"/>
+                                <rect key="frame" x="45" y="-6.5" width="510" height="564"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1y9-dr-498">
                                         <rect key="frame" x="0.0" y="0.0" width="510" height="81"/>
@@ -893,19 +903,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-ss-00U">
-                                        <rect key="frame" x="0.0" y="106" width="450" height="81"/>
+                                        <rect key="frame" x="0.0" y="106" width="450" height="80.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3Dk-T2-3o1">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="80.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-3Q-M8W">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aw-NJ-Ecj">
-                                                        <rect key="frame" x="0.0" y="21" width="300" height="60"/>
+                                                        <rect key="frame" x="0.0" y="20" width="300" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dba-Xn-7yS" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -982,16 +992,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-IL-zy7">
-                                                <rect key="frame" x="330" y="0.0" width="120" height="81"/>
+                                                <rect key="frame" x="330" y="0.0" width="120" height="80.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front LED Fill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxf-AZ-q9j">
-                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsO-lo-BEm">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toa-eG-9sG" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1028,16 +1038,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RHl-9v-oQ0">
-                                        <rect key="frame" x="0.0" y="211" width="300" height="81"/>
+                                        <rect key="frame" x="0.0" y="211" width="300" height="80.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-Zx-LE8">
-                                                <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sr9-6d-DPJ">
-                                                <rect key="frame" x="0.0" y="21" width="300" height="60"/>
+                                                <rect key="frame" x="0.0" y="20" width="300" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-fZ-fZS" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1114,19 +1124,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Ih-k8-QS4">
-                                        <rect key="frame" x="0.0" y="317" width="420" height="141"/>
+                                        <rect key="frame" x="0.0" y="317" width="420" height="140.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bw5-md-OTI">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="141"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side Warm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXl-YY-5lr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-zW-gfA">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-0t-jM3" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1159,7 +1169,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-jQ-13Z">
-                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzu-fW-ufM" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1193,17 +1203,17 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oxh-Km-xI5">
-                                                <rect key="frame" x="150" y="0.0" width="120" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="oxh-Km-xI5">
+                                                <rect key="frame" x="150" y="0.0" width="120" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side Cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viV-7t-uLx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqH-Xz-zRK">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNV-oA-NMM" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1236,7 +1246,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1P-ih-eSW">
-                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-Jo-CGq" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1270,17 +1280,17 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="flZ-eq-mGS">
-                                                <rect key="frame" x="300" y="0.0" width="120" height="141"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="flZ-eq-mGS">
+                                                <rect key="frame" x="300" y="0.0" width="120" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side LED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49C-aD-oTK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-vU-HPX">
-                                                        <rect key="frame" x="0.0" y="21" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="20" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-jx-50y" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1313,7 +1323,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKg-Nk-Lm9">
-                                                        <rect key="frame" x="0.0" y="81" width="120" height="60"/>
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVp-bI-ukX" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -1350,16 +1360,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="smd-1e-KDX">
-                                        <rect key="frame" x="0.0" y="482" width="360" height="82"/>
+                                        <rect key="frame" x="0.0" y="482" width="360" height="81.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-Eg-F8d">
-                                                <rect key="frame" x="0.0" y="0.0" width="32" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.25490196079999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-Kf-VLo">
-                                                <rect key="frame" x="0.0" y="21" width="360" height="61"/>
+                                                <rect key="frame" x="0.0" y="20" width="360" height="61"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="61" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-8i-1Ga" customClass="MagicSheetButton" customModule="FluidQ" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="61"/>
@@ -1455,9 +1465,17 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="FxK-2u-5ta" firstAttribute="centerX" secondItem="vQc-hj-wfP" secondAttribute="centerX" id="B1N-FQ-cj1"/>
+                            <constraint firstItem="FxK-2u-5ta" firstAttribute="centerY" secondItem="vQc-hj-wfP" secondAttribute="centerY" id="mpZ-be-CAx"/>
                             <constraint firstItem="FxK-2u-5ta" firstAttribute="leading" secondItem="vQc-hj-wfP" secondAttribute="leadingMargin" id="x0j-lX-DfN"/>
-                            <constraint firstItem="FxK-2u-5ta" firstAttribute="top" secondItem="A4z-4b-ZjM" secondAttribute="bottom" id="yHc-jc-27i"/>
+                            <constraint firstItem="FxK-2u-5ta" firstAttribute="top" secondItem="A4z-4b-ZjM" secondAttribute="bottom" constant="50" id="yHc-jc-27i"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="x0j-lX-DfN"/>
+                                <exclude reference="yHc-jc-27i"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="OBT" image="MagicSheet" id="gAF-Xe-n3r"/>
                     <connections>
